@@ -1,0 +1,65 @@
+{
+    "columns": {
+        "AGE": {
+            "sdtype": "numerical"
+        },
+        "SEX": {
+            "sdtype": "categorical"
+        },
+        "RACE": {
+            "sdtype": "categorical"
+        },
+        "SER": {
+            "sdtype": "categorical"
+        },
+        "CAN": {
+            "sdtype": "categorical"
+        },
+        "CRN": {
+            "sdtype": "categorical"
+        },
+        "INF": {
+            "sdtype": "categorical"
+        },
+        "CPR": {
+            "sdtype": "categorical"
+        },
+        "SYS": {
+            "sdtype": "numerical"
+        },
+        "HRA": {
+            "sdtype": "numerical"
+        },
+        "PRE": {
+            "sdtype": "categorical"
+        },
+        "TYP": {
+            "sdtype": "categorical"
+        },
+        "FRA": {
+            "sdtype": "categorical"
+        },
+        "PO2": {
+            "sdtype": "categorical"
+        },
+        "PH": {
+            "sdtype": "categorical"
+        },
+        "PCO": {
+            "sdtype": "categorical"
+        },
+        "BIC": {
+            "sdtype": "categorical"
+        },
+        "CRE": {
+            "sdtype": "categorical"
+        },
+        "LOC": {
+            "sdtype": "categorical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

@@ -1,0 +1,35 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "WifeAge": {
+            "sdtype": "numerical"
+        },
+        "WifeEducation": {
+            "sdtype": "categorical"
+        },
+        "HusbandEducation": {
+            "sdtype": "categorical"
+        },
+        "NoChildren": {
+            "sdtype": "numerical"
+        },
+        "WifeReligion": {
+            "sdtype": "categorical"
+        },
+        "WifeWorking": {
+            "sdtype": "categorical"
+        },
+        "HusbandOccupation": {
+            "sdtype": "categorical"
+        },
+        "StdOfLivingIndex": {
+            "sdtype": "categorical"
+        },
+        "MediaExposure": {
+            "sdtype": "categorical"
+        },
+        "Selector": {
+            "sdtype": "categorical"
+        }
+    }
+}

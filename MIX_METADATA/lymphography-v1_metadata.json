@@ -1,0 +1,62 @@
+{
+    "columns": {
+        "lymphatics": {
+            "sdtype": "categorical"
+        },
+        "block_of_affere": {
+            "sdtype": "categorical"
+        },
+        "bl_of_lymph_c": {
+            "sdtype": "categorical"
+        },
+        "bl_of_lymph_s": {
+            "sdtype": "categorical"
+        },
+        "by_pass": {
+            "sdtype": "categorical"
+        },
+        "extravasates": {
+            "sdtype": "categorical"
+        },
+        "regeneration_of": {
+            "sdtype": "categorical"
+        },
+        "early_uptake_in": {
+            "sdtype": "categorical"
+        },
+        "lym_nodes_dimin": {
+            "sdtype": "numerical"
+        },
+        "lym_nodes_enlar": {
+            "sdtype": "numerical"
+        },
+        "changes_in_lym": {
+            "sdtype": "categorical"
+        },
+        "defect_in_node": {
+            "sdtype": "categorical"
+        },
+        "changes_in_node": {
+            "sdtype": "categorical"
+        },
+        "changes_in_stru": {
+            "sdtype": "categorical"
+        },
+        "special_forms": {
+            "sdtype": "categorical"
+        },
+        "dislocation_of": {
+            "sdtype": "categorical"
+        },
+        "exclusion_of_no": {
+            "sdtype": "categorical"
+        },
+        "no_of_nodes_in": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

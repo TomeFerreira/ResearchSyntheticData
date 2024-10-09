@@ -1,0 +1,71 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "LBFHR": {
+            "sdtype": "numerical"
+        },
+        "AC": {
+            "sdtype": "numerical"
+        },
+        "FM": {
+            "sdtype": "numerical"
+        },
+        "UC": {
+            "sdtype": "numerical"
+        },
+        "DL": {
+            "sdtype": "numerical"
+        },
+        "DS": {
+            "sdtype": "numerical"
+        },
+        "DP": {
+            "sdtype": "numerical"
+        },
+        "ASTV": {
+            "sdtype": "numerical"
+        },
+        "MSTV": {
+            "sdtype": "numerical"
+        },
+        "ALTV": {
+            "sdtype": "numerical"
+        },
+        "MLTV": {
+            "sdtype": "numerical"
+        },
+        "Width": {
+            "sdtype": "numerical"
+        },
+        "Min": {
+            "sdtype": "numerical"
+        },
+        "Max": {
+            "sdtype": "numerical"
+        },
+        "Nmax": {
+            "sdtype": "numerical"
+        },
+        "Nzeros": {
+            "sdtype": "numerical"
+        },
+        "Mode": {
+            "sdtype": "numerical"
+        },
+        "Mean": {
+            "sdtype": "numerical"
+        },
+        "Median": {
+            "sdtype": "numerical"
+        },
+        "Variance": {
+            "sdtype": "numerical"
+        },
+        "Tendency": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

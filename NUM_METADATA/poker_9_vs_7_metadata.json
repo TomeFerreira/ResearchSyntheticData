@@ -1,0 +1,38 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "S1": {
+            "sdtype": "numerical"
+        },
+        "C1": {
+            "sdtype": "numerical"
+        },
+        "S2": {
+            "sdtype": "numerical"
+        },
+        "C2": {
+            "sdtype": "numerical"
+        },
+        "S3": {
+            "sdtype": "numerical"
+        },
+        "C3": {
+            "sdtype": "numerical"
+        },
+        "S4": {
+            "sdtype": "numerical"
+        },
+        "C4": {
+            "sdtype": "numerical"
+        },
+        "S5": {
+            "sdtype": "numerical"
+        },
+        "C5": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

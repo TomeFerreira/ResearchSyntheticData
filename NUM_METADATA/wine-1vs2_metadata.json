@@ -1,0 +1,47 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "Alcohol": {
+            "sdtype": "numerical"
+        },
+        "MalicAcid": {
+            "sdtype": "numerical"
+        },
+        "Ash": {
+            "sdtype": "numerical"
+        },
+        "AlcalinityAsh": {
+            "sdtype": "numerical"
+        },
+        "Magnesium": {
+            "sdtype": "numerical"
+        },
+        "TotalPhenols": {
+            "sdtype": "numerical"
+        },
+        "Flavanoids": {
+            "sdtype": "numerical"
+        },
+        "NonflavanoidPhenols": {
+            "sdtype": "numerical"
+        },
+        "Proanthocyanins": {
+            "sdtype": "numerical"
+        },
+        "ColorIntensity": {
+            "sdtype": "numerical"
+        },
+        "Hue": {
+            "sdtype": "numerical"
+        },
+        "OD": {
+            "sdtype": "numerical"
+        },
+        "Proline": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

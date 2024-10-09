@@ -1,0 +1,23 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "T3resin": {
+            "sdtype": "numerical"
+        },
+        "Thyroxin": {
+            "sdtype": "numerical"
+        },
+        "Triiodothyronine": {
+            "sdtype": "numerical"
+        },
+        "Thyroidstimulating": {
+            "sdtype": "numerical"
+        },
+        "TSH_value": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

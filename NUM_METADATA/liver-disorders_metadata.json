@@ -1,0 +1,26 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "MCV": {
+            "sdtype": "numerical"
+        },
+        "ALKPHOS": {
+            "sdtype": "numerical"
+        },
+        "SGPT": {
+            "sdtype": "numerical"
+        },
+        "SGOT": {
+            "sdtype": "numerical"
+        },
+        "GAMMAGT": {
+            "sdtype": "numerical"
+        },
+        "DRINKS": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "columns": {
+        "AGE": {
+            "sdtype": "numerical"
+        },
+        "SEX": {
+            "sdtype": "categorical"
+        },
+        "SMOKSTAT": {
+            "sdtype": "categorical"
+        },
+        "QUETELET": {
+            "sdtype": "numerical"
+        },
+        "VITUSE": {
+            "sdtype": "categorical"
+        },
+        "CALORIES": {
+            "sdtype": "numerical"
+        },
+        "FAT": {
+            "sdtype": "numerical"
+        },
+        "FIBER": {
+            "sdtype": "numerical"
+        },
+        "ALCOHOL": {
+            "sdtype": "numerical"
+        },
+        "CHOLESTEROL": {
+            "sdtype": "numerical"
+        },
+        "BETADIET": {
+            "sdtype": "numerical"
+        },
+        "RETDIET": {
+            "sdtype": "numerical"
+        },
+        "BETAPLASMA": {
+            "sdtype": "numerical"
+        },
+        "binaryClass": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

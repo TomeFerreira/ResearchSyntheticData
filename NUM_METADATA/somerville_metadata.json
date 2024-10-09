@@ -1,0 +1,26 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "X1": {
+            "sdtype": "numerical"
+        },
+        "X2": {
+            "sdtype": "numerical"
+        },
+        "X3": {
+            "sdtype": "numerical"
+        },
+        "X4": {
+            "sdtype": "numerical"
+        },
+        "X5": {
+            "sdtype": "numerical"
+        },
+        "X6": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

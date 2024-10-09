@@ -1,0 +1,26 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "mcv": {
+            "sdtype": "numerical"
+        },
+        "alkphos": {
+            "sdtype": "numerical"
+        },
+        "sgpt": {
+            "sdtype": "numerical"
+        },
+        "sgot": {
+            "sdtype": "numerical"
+        },
+        "gammagt": {
+            "sdtype": "numerical"
+        },
+        "drinks": {
+            "sdtype": "categorical"
+        },
+        "selector": {
+            "sdtype": "categorical"
+        }
+    }
+}

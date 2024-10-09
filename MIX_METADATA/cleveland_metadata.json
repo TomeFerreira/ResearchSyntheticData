@@ -1,0 +1,47 @@
+{
+    "columns": {
+        "Age": {
+            "sdtype": "numerical"
+        },
+        "Sex": {
+            "sdtype": "categorical"
+        },
+        "Cp": {
+            "sdtype": "categorical"
+        },
+        "Trestbps": {
+            "sdtype": "numerical"
+        },
+        "Chol": {
+            "sdtype": "numerical"
+        },
+        "Fbs": {
+            "sdtype": "categorical"
+        },
+        "Restecg": {
+            "sdtype": "categorical"
+        },
+        "Thalach": {
+            "sdtype": "numerical"
+        },
+        "Exang": {
+            "sdtype": "categorical"
+        },
+        "Oldpeak": {
+            "sdtype": "numerical"
+        },
+        "Slope": {
+            "sdtype": "categorical"
+        },
+        "Ca": {
+            "sdtype": "numerical"
+        },
+        "Thal": {
+            "sdtype": "categorical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

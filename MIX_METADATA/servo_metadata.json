@@ -1,0 +1,20 @@
+{
+    "columns": {
+        "motor": {
+            "sdtype": "categorical"
+        },
+        "screw": {
+            "sdtype": "categorical"
+        },
+        "pgain": {
+            "sdtype": "numerical"
+        },
+        "vgain": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

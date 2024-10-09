@@ -1,0 +1,26 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "Buying": {
+            "sdtype": "categorical"
+        },
+        "Maint": {
+            "sdtype": "categorical"
+        },
+        "Doors": {
+            "sdtype": "categorical"
+        },
+        "Persons": {
+            "sdtype": "categorical"
+        },
+        "Lug_boot": {
+            "sdtype": "categorical"
+        },
+        "Safety": {
+            "sdtype": "categorical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

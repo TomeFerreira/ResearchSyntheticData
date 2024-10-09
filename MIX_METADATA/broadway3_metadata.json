@@ -1,0 +1,32 @@
+{
+    "columns": {
+        "Type": {
+            "sdtype": "categorical"
+        },
+        "Revival": {
+            "sdtype": "categorical"
+        },
+        "NYT_rating": {
+            "sdtype": "numerical"
+        },
+        "DN_rating": {
+            "sdtype": "numerical"
+        },
+        "Tony_awards": {
+            "sdtype": "numerical"
+        },
+        "Tony_nominations": {
+            "sdtype": "numerical"
+        },
+        "Week_1_attendance": {
+            "sdtype": "numerical"
+        },
+        "Show_run": {
+            "sdtype": "categorical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

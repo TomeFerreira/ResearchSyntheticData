@@ -1,0 +1,56 @@
+{
+    "columns": {
+        "DGN": {
+            "sdtype": "categorical"
+        },
+        "PRE4": {
+            "sdtype": "numerical"
+        },
+        "PRE5": {
+            "sdtype": "numerical"
+        },
+        "PRE6": {
+            "sdtype": "categorical"
+        },
+        "PRE7": {
+            "sdtype": "categorical"
+        },
+        "PRE8": {
+            "sdtype": "categorical"
+        },
+        "PRE9": {
+            "sdtype": "categorical"
+        },
+        "PRE10": {
+            "sdtype": "categorical"
+        },
+        "PRE11": {
+            "sdtype": "categorical"
+        },
+        "PRE14": {
+            "sdtype": "categorical"
+        },
+        "PRE17": {
+            "sdtype": "categorical"
+        },
+        "PRE19": {
+            "sdtype": "categorical"
+        },
+        "PRE25": {
+            "sdtype": "categorical"
+        },
+        "PRE30": {
+            "sdtype": "categorical"
+        },
+        "PRE32": {
+            "sdtype": "categorical"
+        },
+        "AGE": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

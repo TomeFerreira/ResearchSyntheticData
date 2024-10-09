@@ -1,0 +1,65 @@
+{
+    "columns": {
+        "Age": {
+            "sdtype": "numerical"
+        },
+        "Sex": {
+            "sdtype": "categorical"
+        },
+        "Steroid": {
+            "sdtype": "categorical"
+        },
+        "Antivirals": {
+            "sdtype": "categorical"
+        },
+        "Fatigue": {
+            "sdtype": "categorical"
+        },
+        "Malaise": {
+            "sdtype": "categorical"
+        },
+        "Anorexia": {
+            "sdtype": "categorical"
+        },
+        "LiverBig": {
+            "sdtype": "categorical"
+        },
+        "LiverFirm": {
+            "sdtype": "categorical"
+        },
+        "SpleenPalpable": {
+            "sdtype": "categorical"
+        },
+        "Spiders": {
+            "sdtype": "categorical"
+        },
+        "Ascites": {
+            "sdtype": "categorical"
+        },
+        "Varices": {
+            "sdtype": "categorical"
+        },
+        "Bilirubin": {
+            "sdtype": "numerical"
+        },
+        "AlkPhosphate": {
+            "sdtype": "numerical"
+        },
+        "Sgot": {
+            "sdtype": "numerical"
+        },
+        "Albumin": {
+            "sdtype": "numerical"
+        },
+        "Protime": {
+            "sdtype": "numerical"
+        },
+        "Histology": {
+            "sdtype": "categorical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

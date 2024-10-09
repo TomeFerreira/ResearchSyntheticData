@@ -1,0 +1,23 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "HouseAge": {
+            "sdtype": "numerical"
+        },
+        "Distance_to_MRT_station": {
+            "sdtype": "numerical"
+        },
+        "No_Convenience_Stores": {
+            "sdtype": "numerical"
+        },
+        "Lat": {
+            "sdtype": "numerical"
+        },
+        "Lon": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

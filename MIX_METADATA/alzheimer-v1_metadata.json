@@ -1,0 +1,35 @@
+{
+    "columns": {
+        "MRDelay": {
+            "sdtype": "numerical"
+        },
+        "Gender": {
+            "sdtype": "categorical"
+        },
+        "Age": {
+            "sdtype": "numerical"
+        },
+        "Educ": {
+            "sdtype": "numerical"
+        },
+        "SES": {
+            "sdtype": "categorical"
+        },
+        "MMSE": {
+            "sdtype": "numerical"
+        },
+        "ETIV": {
+            "sdtype": "numerical"
+        },
+        "NWBV": {
+            "sdtype": "numerical"
+        },
+        "ASF": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

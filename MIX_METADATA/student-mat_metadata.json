@@ -1,0 +1,98 @@
+{
+    "columns": {
+        "School": {
+            "sdtype": "categorical"
+        },
+        "Sex": {
+            "sdtype": "categorical"
+        },
+        "Age": {
+            "sdtype": "numerical"
+        },
+        "Address": {
+            "sdtype": "categorical"
+        },
+        "Famsize": {
+            "sdtype": "categorical"
+        },
+        "Pstatus": {
+            "sdtype": "categorical"
+        },
+        "Medu": {
+            "sdtype": "categorical"
+        },
+        "Fedu": {
+            "sdtype": "categorical"
+        },
+        "Mjob": {
+            "sdtype": "categorical"
+        },
+        "Fjob": {
+            "sdtype": "categorical"
+        },
+        "Reason": {
+            "sdtype": "categorical"
+        },
+        "Guardian": {
+            "sdtype": "categorical"
+        },
+        "TravelTime": {
+            "sdtype": "categorical"
+        },
+        "StudyTime": {
+            "sdtype": "categorical"
+        },
+        "Failures": {
+            "sdtype": "numerical"
+        },
+        "SchoolSup": {
+            "sdtype": "categorical"
+        },
+        "FamSup": {
+            "sdtype": "categorical"
+        },
+        "Paid": {
+            "sdtype": "categorical"
+        },
+        "Activities": {
+            "sdtype": "categorical"
+        },
+        "Nursery": {
+            "sdtype": "categorical"
+        },
+        "Higher": {
+            "sdtype": "categorical"
+        },
+        "Internet": {
+            "sdtype": "categorical"
+        },
+        "Romantic": {
+            "sdtype": "categorical"
+        },
+        "FamRel": {
+            "sdtype": "numerical"
+        },
+        "FreeTime": {
+            "sdtype": "numerical"
+        },
+        "GoOut": {
+            "sdtype": "numerical"
+        },
+        "DAlc": {
+            "sdtype": "numerical"
+        },
+        "WAlc": {
+            "sdtype": "numerical"
+        },
+        "Health": {
+            "sdtype": "numerical"
+        },
+        "Absences": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

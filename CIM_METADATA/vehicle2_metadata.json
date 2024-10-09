@@ -1,0 +1,62 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "Compactness": {
+            "sdtype": "numerical"
+        },
+        "Circularity": {
+            "sdtype": "numerical"
+        },
+        "Distance_circularity": {
+            "sdtype": "numerical"
+        },
+        "Radius_ratio": {
+            "sdtype": "numerical"
+        },
+        "Praxis_aspect_ratio": {
+            "sdtype": "numerical"
+        },
+        "Max_length_aspect_ratio": {
+            "sdtype": "numerical"
+        },
+        "Scatter_ratio": {
+            "sdtype": "numerical"
+        },
+        "Elongatedness": {
+            "sdtype": "numerical"
+        },
+        "Praxis_rectangular": {
+            "sdtype": "numerical"
+        },
+        "Length_rectangular": {
+            "sdtype": "numerical"
+        },
+        "Major_variance": {
+            "sdtype": "numerical"
+        },
+        "Minor_variance": {
+            "sdtype": "numerical"
+        },
+        "Gyration_radius": {
+            "sdtype": "numerical"
+        },
+        "Major_skewness": {
+            "sdtype": "numerical"
+        },
+        "Minor_skewness": {
+            "sdtype": "numerical"
+        },
+        "Minor_kurtosis": {
+            "sdtype": "numerical"
+        },
+        "Major_kurtosis": {
+            "sdtype": "numerical"
+        },
+        "Hollows_ratio": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

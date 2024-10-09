@@ -1,0 +1,71 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "Sintoma1": {
+            "sdtype": "numerical"
+        },
+        "Sintoma2": {
+            "sdtype": "numerical"
+        },
+        "Sintoma3": {
+            "sdtype": "numerical"
+        },
+        "Sintoma4": {
+            "sdtype": "numerical"
+        },
+        "Sintoma5": {
+            "sdtype": "numerical"
+        },
+        "Sintoma6": {
+            "sdtype": "numerical"
+        },
+        "Sintoma7": {
+            "sdtype": "numerical"
+        },
+        "Sintoma8": {
+            "sdtype": "numerical"
+        },
+        "Sintoma9": {
+            "sdtype": "numerical"
+        },
+        "Sintoma10": {
+            "sdtype": "numerical"
+        },
+        "Sintoma11": {
+            "sdtype": "numerical"
+        },
+        "Sintoma12": {
+            "sdtype": "numerical"
+        },
+        "Sintoma13": {
+            "sdtype": "numerical"
+        },
+        "Sintoma14": {
+            "sdtype": "numerical"
+        },
+        "Sintoma15": {
+            "sdtype": "numerical"
+        },
+        "Sintoma16": {
+            "sdtype": "numerical"
+        },
+        "Sintoma17": {
+            "sdtype": "numerical"
+        },
+        "Sintoma18": {
+            "sdtype": "numerical"
+        },
+        "Sintoma19": {
+            "sdtype": "numerical"
+        },
+        "Sintoma20": {
+            "sdtype": "numerical"
+        },
+        "Sintoma21": {
+            "sdtype": "numerical"
+        },
+        "class": {
+            "sdtype": "categorical"
+        }
+    }
+}

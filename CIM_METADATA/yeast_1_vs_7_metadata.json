@@ -1,0 +1,29 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "Mcg": {
+            "sdtype": "numerical"
+        },
+        "Gvh": {
+            "sdtype": "numerical"
+        },
+        "Alm": {
+            "sdtype": "numerical"
+        },
+        "Mit": {
+            "sdtype": "numerical"
+        },
+        "Erl": {
+            "sdtype": "numerical"
+        },
+        "Vac": {
+            "sdtype": "numerical"
+        },
+        "Nuc": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

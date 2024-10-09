@@ -1,0 +1,71 @@
+{
+    "columns": {
+        "V1": {
+            "sdtype": "categorical"
+        },
+        "V2": {
+            "sdtype": "categorical"
+        },
+        "V3": {
+            "sdtype": "numerical"
+        },
+        "V4": {
+            "sdtype": "numerical"
+        },
+        "V5": {
+            "sdtype": "numerical"
+        },
+        "V6": {
+            "sdtype": "numerical"
+        },
+        "V7": {
+            "sdtype": "categorical"
+        },
+        "V8": {
+            "sdtype": "categorical"
+        },
+        "V9": {
+            "sdtype": "categorical"
+        },
+        "V10": {
+            "sdtype": "categorical"
+        },
+        "V11": {
+            "sdtype": "numerical"
+        },
+        "V12": {
+            "sdtype": "numerical"
+        },
+        "V13": {
+            "sdtype": "numerical"
+        },
+        "V14": {
+            "sdtype": "numerical"
+        },
+        "V15": {
+            "sdtype": "categorical"
+        },
+        "V16": {
+            "sdtype": "categorical"
+        },
+        "V17": {
+            "sdtype": "numerical"
+        },
+        "V18": {
+            "sdtype": "numerical"
+        },
+        "V19": {
+            "sdtype": "categorical"
+        },
+        "V20": {
+            "sdtype": "categorical"
+        },
+        "V21": {
+            "sdtype": "numerical"
+        },
+        "Good": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

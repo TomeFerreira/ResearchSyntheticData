@@ -1,0 +1,59 @@
+{
+    "columns": {
+        "DRUG": {
+            "sdtype": "categorical"
+        },
+        "AGEDAYS": {
+            "sdtype": "numerical"
+        },
+        "SEX": {
+            "sdtype": "categorical"
+        },
+        "ASCITES": {
+            "sdtype": "categorical"
+        },
+        "HEPATOMEGALY": {
+            "sdtype": "categorical"
+        },
+        "SPIDERS": {
+            "sdtype": "categorical"
+        },
+        "EDEMA": {
+            "sdtype": "categorical"
+        },
+        "BIL": {
+            "sdtype": "numerical"
+        },
+        "CHOL": {
+            "sdtype": "numerical"
+        },
+        "ALB": {
+            "sdtype": "numerical"
+        },
+        "COPPER": {
+            "sdtype": "numerical"
+        },
+        "ALKPHOS": {
+            "sdtype": "numerical"
+        },
+        "SGOT": {
+            "sdtype": "numerical"
+        },
+        "TRIG": {
+            "sdtype": "numerical"
+        },
+        "PLAT": {
+            "sdtype": "numerical"
+        },
+        "PROT": {
+            "sdtype": "numerical"
+        },
+        "HISTSTAGE": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

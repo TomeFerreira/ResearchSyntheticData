@@ -1,0 +1,35 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "Age": {
+            "sdtype": "numerical"
+        },
+        "BMI": {
+            "sdtype": "numerical"
+        },
+        "Glucose": {
+            "sdtype": "numerical"
+        },
+        "Insulin": {
+            "sdtype": "numerical"
+        },
+        "HOMA": {
+            "sdtype": "numerical"
+        },
+        "Leptin": {
+            "sdtype": "numerical"
+        },
+        "Adiponectin": {
+            "sdtype": "numerical"
+        },
+        "Resistin": {
+            "sdtype": "numerical"
+        },
+        "MCP1": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

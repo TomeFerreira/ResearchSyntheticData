@@ -1,0 +1,56 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "xBox": {
+            "sdtype": "numerical"
+        },
+        "yBox": {
+            "sdtype": "numerical"
+        },
+        "width": {
+            "sdtype": "numerical"
+        },
+        "height": {
+            "sdtype": "numerical"
+        },
+        "onpix": {
+            "sdtype": "numerical"
+        },
+        "xBar": {
+            "sdtype": "numerical"
+        },
+        "yBar": {
+            "sdtype": "numerical"
+        },
+        "x2Bar": {
+            "sdtype": "numerical"
+        },
+        "y2Bar": {
+            "sdtype": "numerical"
+        },
+        "xyBar": {
+            "sdtype": "numerical"
+        },
+        "x2ybr": {
+            "sdtype": "numerical"
+        },
+        "xy2br": {
+            "sdtype": "numerical"
+        },
+        "x_ege": {
+            "sdtype": "numerical"
+        },
+        "xegvy": {
+            "sdtype": "numerical"
+        },
+        "y_ege": {
+            "sdtype": "numerical"
+        },
+        "yegvx": {
+            "sdtype": "numerical"
+        },
+        "lettr": {
+            "sdtype": "categorical"
+        }
+    }
+}

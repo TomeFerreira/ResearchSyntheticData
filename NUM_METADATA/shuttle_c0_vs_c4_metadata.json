@@ -1,0 +1,35 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "A1": {
+            "sdtype": "numerical"
+        },
+        "A2": {
+            "sdtype": "numerical"
+        },
+        "A3": {
+            "sdtype": "numerical"
+        },
+        "A4": {
+            "sdtype": "numerical"
+        },
+        "A5": {
+            "sdtype": "numerical"
+        },
+        "A6": {
+            "sdtype": "numerical"
+        },
+        "A7": {
+            "sdtype": "numerical"
+        },
+        "A8": {
+            "sdtype": "numerical"
+        },
+        "A9": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

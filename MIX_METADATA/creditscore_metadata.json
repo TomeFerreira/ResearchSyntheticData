@@ -1,0 +1,26 @@
+{
+    "columns": {
+        "Age": {
+            "sdtype": "numerical"
+        },
+        "Income_per_dependent": {
+            "sdtype": "numerical"
+        },
+        "Monthly_credit_card_exp": {
+            "sdtype": "numerical"
+        },
+        "Own_home": {
+            "sdtype": "categorical"
+        },
+        "Self_employed": {
+            "sdtype": "categorical"
+        },
+        "Derogatory_reports": {
+            "sdtype": "numerical"
+        },
+        "Application_accepted": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

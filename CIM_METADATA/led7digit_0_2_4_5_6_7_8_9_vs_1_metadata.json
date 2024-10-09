@@ -1,0 +1,29 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "Led1": {
+            "sdtype": "numerical"
+        },
+        "Led2": {
+            "sdtype": "numerical"
+        },
+        "Led3": {
+            "sdtype": "numerical"
+        },
+        "Led4": {
+            "sdtype": "numerical"
+        },
+        "Led5": {
+            "sdtype": "numerical"
+        },
+        "Led6": {
+            "sdtype": "numerical"
+        },
+        "Led7": {
+            "sdtype": "numerical"
+        },
+        "number": {
+            "sdtype": "categorical"
+        }
+    }
+}

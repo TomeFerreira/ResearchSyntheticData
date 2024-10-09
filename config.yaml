@@ -1,0 +1,8 @@
+general:
+  DATASET_PATH: 'C:\Users\Tomé\OneDrive - Universidade de Coimbra\Uni\3Ano\SegundoSemestre\Research\Semana4\DATASETS\DATASETS'
+  PATH: 'results_datasets_MIX'
+  PATH_METADATA: 'MIX_METADATA'
+  DIR: 'MIX-DATA-ECAI-2021'
+  DATASET_TEMP: 'temp_'
+  SCORES_TEMP: 'temp_scores_'
+  METRICS_TEMP: 'temp_metrics_'

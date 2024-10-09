@@ -1,0 +1,35 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "ClumpThickness": {
+            "sdtype": "numerical"
+        },
+        "CellSize": {
+            "sdtype": "numerical"
+        },
+        "CellShape": {
+            "sdtype": "numerical"
+        },
+        "MarginalAdhesion": {
+            "sdtype": "numerical"
+        },
+        "EpithelialSize": {
+            "sdtype": "numerical"
+        },
+        "BareNuclei": {
+            "sdtype": "numerical"
+        },
+        "BlandChromatin": {
+            "sdtype": "numerical"
+        },
+        "NormalNucleoli": {
+            "sdtype": "numerical"
+        },
+        "Mitoses": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

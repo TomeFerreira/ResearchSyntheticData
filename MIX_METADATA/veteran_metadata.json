@@ -1,0 +1,26 @@
+{
+    "columns": {
+        "treatment": {
+            "sdtype": "categorical"
+        },
+        "celltype": {
+            "sdtype": "categorical"
+        },
+        "karnofsky": {
+            "sdtype": "numerical"
+        },
+        "months": {
+            "sdtype": "numerical"
+        },
+        "age": {
+            "sdtype": "numerical"
+        },
+        "therapy": {
+            "sdtype": "categorical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

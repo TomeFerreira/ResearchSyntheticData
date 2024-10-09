@@ -1,0 +1,29 @@
+{
+    "columns": {
+        "Sex": {
+            "sdtype": "categorical"
+        },
+        "Age": {
+            "sdtype": "numerical"
+        },
+        "Time": {
+            "sdtype": "numerical"
+        },
+        "NumberOfWarts": {
+            "sdtype": "numerical"
+        },
+        "TypeOfWarts": {
+            "sdtype": "categorical"
+        },
+        "Area": {
+            "sdtype": "numerical"
+        },
+        "Induration": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

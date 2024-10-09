@@ -1,0 +1,59 @@
+{
+    "columns": {
+        "Hour": {
+            "sdtype": "categorical"
+        },
+        "ImmobilizedBus": {
+            "sdtype": "numerical"
+        },
+        "BrokenTruck": {
+            "sdtype": "numerical"
+        },
+        "VehicleExcess": {
+            "sdtype": "categorical"
+        },
+        "AccidentVictim": {
+            "sdtype": "numerical"
+        },
+        "RunningOver": {
+            "sdtype": "numerical"
+        },
+        "FireVehicles": {
+            "sdtype": "categorical"
+        },
+        "Occurrence_involving_freight": {
+            "sdtype": "categorical"
+        },
+        "Incident_involving_dangerous_freight": {
+            "sdtype": "categorical"
+        },
+        "Lack_of_electricity": {
+            "sdtype": "numerical"
+        },
+        "Fire": {
+            "sdtype": "categorical"
+        },
+        "Point_of_flooding": {
+            "sdtype": "numerical"
+        },
+        "Manifestations": {
+            "sdtype": "categorical"
+        },
+        "Defect_in_the_network_of_trolleybuses": {
+            "sdtype": "numerical"
+        },
+        "Tree_on_the_road": {
+            "sdtype": "categorical"
+        },
+        "Semaphore_off": {
+            "sdtype": "numerical"
+        },
+        "Intermittent_Semaphore": {
+            "sdtype": "categorical"
+        },
+        "CLASS": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

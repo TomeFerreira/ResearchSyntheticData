@@ -1,0 +1,23 @@
+{
+    "columns": {
+        "Age": {
+            "sdtype": "numerical"
+        },
+        "Delivery": {
+            "sdtype": "numerical"
+        },
+        "DeliveryTime": {
+            "sdtype": "categorical"
+        },
+        "BloodPressure": {
+            "sdtype": "categorical"
+        },
+        "HeartProblem": {
+            "sdtype": "categorical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

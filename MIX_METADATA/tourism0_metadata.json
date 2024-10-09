@@ -1,0 +1,32 @@
+{
+    "columns": {
+        "Age": {
+            "sdtype": "numerical"
+        },
+        "Sex": {
+            "sdtype": "categorical"
+        },
+        "Income": {
+            "sdtype": "numerical"
+        },
+        "Travel_cost": {
+            "sdtype": "numerical"
+        },
+        "Access_road": {
+            "sdtype": "categorical"
+        },
+        "Active": {
+            "sdtype": "categorical"
+        },
+        "Passive": {
+            "sdtype": "categorical"
+        },
+        "Logged_income": {
+            "sdtype": "numerical"
+        },
+        "Trips": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

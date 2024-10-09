@@ -1,0 +1,23 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "STG": {
+            "sdtype": "numerical"
+        },
+        "SCG": {
+            "sdtype": "numerical"
+        },
+        "STR": {
+            "sdtype": "numerical"
+        },
+        "LPR": {
+            "sdtype": "numerical"
+        },
+        "PEG": {
+            "sdtype": "numerical"
+        },
+        "CLASSVL": {
+            "sdtype": "categorical"
+        }
+    }
+}

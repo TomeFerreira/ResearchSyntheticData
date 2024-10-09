@@ -1,0 +1,29 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "Mcg": {
+            "sdtype": "numerical"
+        },
+        "Gvh": {
+            "sdtype": "numerical"
+        },
+        "Lip": {
+            "sdtype": "numerical"
+        },
+        "Chg": {
+            "sdtype": "numerical"
+        },
+        "Aac": {
+            "sdtype": "numerical"
+        },
+        "Alm1": {
+            "sdtype": "numerical"
+        },
+        "Alm2": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

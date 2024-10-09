@@ -1,0 +1,32 @@
+{
+    "columns": {
+        "League": {
+            "sdtype": "categorical"
+        },
+        "Type": {
+            "sdtype": "categorical"
+        },
+        "Wins": {
+            "sdtype": "numerical"
+        },
+        "Win_pct": {
+            "sdtype": "numerical"
+        },
+        "Saves": {
+            "sdtype": "numerical"
+        },
+        "ERA": {
+            "sdtype": "numerical"
+        },
+        "Strikeouts": {
+            "sdtype": "numerical"
+        },
+        "Innings_pitched": {
+            "sdtype": "numerical"
+        },
+        "Cy_Young": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

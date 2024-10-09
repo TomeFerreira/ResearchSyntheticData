@@ -1,0 +1,140 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "F1R": {
+            "sdtype": "numerical"
+        },
+        "F1S": {
+            "sdtype": "numerical"
+        },
+        "F2R": {
+            "sdtype": "numerical"
+        },
+        "F2S": {
+            "sdtype": "numerical"
+        },
+        "F3R": {
+            "sdtype": "numerical"
+        },
+        "F3S": {
+            "sdtype": "numerical"
+        },
+        "F4R": {
+            "sdtype": "numerical"
+        },
+        "F4S": {
+            "sdtype": "numerical"
+        },
+        "F5R": {
+            "sdtype": "numerical"
+        },
+        "F5S": {
+            "sdtype": "numerical"
+        },
+        "F6R": {
+            "sdtype": "numerical"
+        },
+        "F6S": {
+            "sdtype": "numerical"
+        },
+        "F7R": {
+            "sdtype": "numerical"
+        },
+        "F7S": {
+            "sdtype": "numerical"
+        },
+        "F8R": {
+            "sdtype": "numerical"
+        },
+        "F8S": {
+            "sdtype": "numerical"
+        },
+        "F9R": {
+            "sdtype": "numerical"
+        },
+        "F9S": {
+            "sdtype": "numerical"
+        },
+        "F10R": {
+            "sdtype": "numerical"
+        },
+        "F10S": {
+            "sdtype": "numerical"
+        },
+        "F11R": {
+            "sdtype": "numerical"
+        },
+        "F11S": {
+            "sdtype": "numerical"
+        },
+        "F12R": {
+            "sdtype": "numerical"
+        },
+        "F12S": {
+            "sdtype": "numerical"
+        },
+        "F13R": {
+            "sdtype": "numerical"
+        },
+        "F13S": {
+            "sdtype": "numerical"
+        },
+        "F14R": {
+            "sdtype": "numerical"
+        },
+        "F14S": {
+            "sdtype": "numerical"
+        },
+        "F15R": {
+            "sdtype": "numerical"
+        },
+        "F15S": {
+            "sdtype": "numerical"
+        },
+        "F16R": {
+            "sdtype": "numerical"
+        },
+        "F16S": {
+            "sdtype": "numerical"
+        },
+        "F17R": {
+            "sdtype": "numerical"
+        },
+        "F17S": {
+            "sdtype": "numerical"
+        },
+        "F18R": {
+            "sdtype": "numerical"
+        },
+        "F18S": {
+            "sdtype": "numerical"
+        },
+        "F19R": {
+            "sdtype": "numerical"
+        },
+        "F19S": {
+            "sdtype": "numerical"
+        },
+        "F20R": {
+            "sdtype": "numerical"
+        },
+        "F20S": {
+            "sdtype": "numerical"
+        },
+        "F21R": {
+            "sdtype": "numerical"
+        },
+        "F21S": {
+            "sdtype": "numerical"
+        },
+        "F22R": {
+            "sdtype": "numerical"
+        },
+        "F22S": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

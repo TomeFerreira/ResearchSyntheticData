@@ -1,0 +1,20 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "Left-Weight": {
+            "sdtype": "numerical"
+        },
+        "Left-Distance": {
+            "sdtype": "numerical"
+        },
+        "Right-Weight": {
+            "sdtype": "numerical"
+        },
+        "Right-Distance": {
+            "sdtype": "numerical"
+        },
+        "class": {
+            "sdtype": "categorical"
+        }
+    }
+}

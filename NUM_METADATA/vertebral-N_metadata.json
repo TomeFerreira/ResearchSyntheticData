@@ -1,0 +1,26 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "pelvicIncidence": {
+            "sdtype": "numerical"
+        },
+        "pelvicTilt": {
+            "sdtype": "numerical"
+        },
+        "lumbarLordosisAngle": {
+            "sdtype": "numerical"
+        },
+        "sacralSlope": {
+            "sdtype": "numerical"
+        },
+        "pelvicRadius": {
+            "sdtype": "numerical"
+        },
+        "degreeSpondylolisthesis": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

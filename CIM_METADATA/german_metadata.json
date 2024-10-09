@@ -1,0 +1,68 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "Status": {
+            "sdtype": "categorical"
+        },
+        "Duration": {
+            "sdtype": "numerical"
+        },
+        "CreditHist": {
+            "sdtype": "categorical"
+        },
+        "Purpose": {
+            "sdtype": "categorical"
+        },
+        "CreditAmount": {
+            "sdtype": "numerical"
+        },
+        "Savings": {
+            "sdtype": "categorical"
+        },
+        "PresentEmploy": {
+            "sdtype": "categorical"
+        },
+        "InstallmenteRate": {
+            "sdtype": "numerical"
+        },
+        "PersonalStatusSex": {
+            "sdtype": "categorical"
+        },
+        "Guarantors": {
+            "sdtype": "categorical"
+        },
+        "PresentResidence": {
+            "sdtype": "numerical"
+        },
+        "Property": {
+            "sdtype": "categorical"
+        },
+        "Age": {
+            "sdtype": "numerical"
+        },
+        "InstallmentPlans": {
+            "sdtype": "categorical"
+        },
+        "Housing": {
+            "sdtype": "categorical"
+        },
+        "NoCredit": {
+            "sdtype": "numerical"
+        },
+        "Job": {
+            "sdtype": "categorical"
+        },
+        "NoPeople": {
+            "sdtype": "numerical"
+        },
+        "Telephone": {
+            "sdtype": "categorical"
+        },
+        "ForeignWorker": {
+            "sdtype": "categorical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

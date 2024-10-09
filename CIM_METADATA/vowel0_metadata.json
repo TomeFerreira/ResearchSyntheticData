@@ -1,0 +1,47 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "TT": {
+            "sdtype": "numerical"
+        },
+        "SpeakerNumber": {
+            "sdtype": "numerical"
+        },
+        "Sex": {
+            "sdtype": "numerical"
+        },
+        "F0": {
+            "sdtype": "numerical"
+        },
+        "F1": {
+            "sdtype": "numerical"
+        },
+        "F2": {
+            "sdtype": "numerical"
+        },
+        "F3": {
+            "sdtype": "numerical"
+        },
+        "F4": {
+            "sdtype": "numerical"
+        },
+        "F5": {
+            "sdtype": "numerical"
+        },
+        "F6": {
+            "sdtype": "numerical"
+        },
+        "F7": {
+            "sdtype": "numerical"
+        },
+        "F8": {
+            "sdtype": "numerical"
+        },
+        "F9": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

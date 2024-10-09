@@ -1,0 +1,44 @@
+{
+    "columns": {
+        "X": {
+            "sdtype": "numerical"
+        },
+        "Y": {
+            "sdtype": "numerical"
+        },
+        "Month": {
+            "sdtype": "categorical"
+        },
+        "Day": {
+            "sdtype": "categorical"
+        },
+        "FFMC": {
+            "sdtype": "numerical"
+        },
+        "DMC": {
+            "sdtype": "numerical"
+        },
+        "DC": {
+            "sdtype": "numerical"
+        },
+        "ISI": {
+            "sdtype": "numerical"
+        },
+        "Temp": {
+            "sdtype": "numerical"
+        },
+        "RH": {
+            "sdtype": "numerical"
+        },
+        "wind": {
+            "sdtype": "numerical"
+        },
+        "rain": {
+            "sdtype": "numerical"
+        },
+        "area": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

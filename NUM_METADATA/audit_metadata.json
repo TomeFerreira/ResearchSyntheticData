@@ -1,0 +1,32 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "Sector_score": {
+            "sdtype": "numerical"
+        },
+        "PARA_A": {
+            "sdtype": "numerical"
+        },
+        "PARA_B": {
+            "sdtype": "numerical"
+        },
+        "numbers": {
+            "sdtype": "numerical"
+        },
+        "Money_Value": {
+            "sdtype": "numerical"
+        },
+        "District": {
+            "sdtype": "numerical"
+        },
+        "LOSS_SCORE": {
+            "sdtype": "numerical"
+        },
+        "History_score": {
+            "sdtype": "numerical"
+        },
+        "Risk": {
+            "sdtype": "categorical"
+        }
+    }
+}

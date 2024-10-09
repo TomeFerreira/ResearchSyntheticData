@@ -1,0 +1,35 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "I0": {
+            "sdtype": "numerical"
+        },
+        "PA500": {
+            "sdtype": "numerical"
+        },
+        "HFS": {
+            "sdtype": "numerical"
+        },
+        "DA": {
+            "sdtype": "numerical"
+        },
+        "Area": {
+            "sdtype": "numerical"
+        },
+        "ADA": {
+            "sdtype": "numerical"
+        },
+        "MAXIP": {
+            "sdtype": "numerical"
+        },
+        "DR": {
+            "sdtype": "numerical"
+        },
+        "P": {
+            "sdtype": "numerical"
+        },
+        "CAR": {
+            "sdtype": "categorical"
+        }
+    }
+}

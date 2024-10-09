@@ -1,0 +1,17 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "Age": {
+            "sdtype": "numerical"
+        },
+        "Year": {
+            "sdtype": "numerical"
+        },
+        "Positive": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

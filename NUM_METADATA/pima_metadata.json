@@ -1,0 +1,32 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "Preg": {
+            "sdtype": "numerical"
+        },
+        "Plas": {
+            "sdtype": "numerical"
+        },
+        "Pres": {
+            "sdtype": "numerical"
+        },
+        "Skin": {
+            "sdtype": "numerical"
+        },
+        "Insu": {
+            "sdtype": "numerical"
+        },
+        "Mass": {
+            "sdtype": "numerical"
+        },
+        "Pedi": {
+            "sdtype": "numerical"
+        },
+        "Age": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

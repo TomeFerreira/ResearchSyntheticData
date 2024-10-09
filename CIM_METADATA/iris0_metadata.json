@@ -1,0 +1,20 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "SepalLength": {
+            "sdtype": "numerical"
+        },
+        "SepalWidth": {
+            "sdtype": "numerical"
+        },
+        "PetalLength": {
+            "sdtype": "numerical"
+        },
+        "PetalWidth": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

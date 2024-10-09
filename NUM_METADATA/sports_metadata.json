@@ -1,0 +1,185 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "totalWordsCount": {
+            "sdtype": "numerical"
+        },
+        "semanticobjscore": {
+            "sdtype": "numerical"
+        },
+        "semanticsubjscore": {
+            "sdtype": "numerical"
+        },
+        "CC": {
+            "sdtype": "numerical"
+        },
+        "CD": {
+            "sdtype": "numerical"
+        },
+        "DT": {
+            "sdtype": "numerical"
+        },
+        "EX": {
+            "sdtype": "numerical"
+        },
+        "FW": {
+            "sdtype": "numerical"
+        },
+        "INs": {
+            "sdtype": "numerical"
+        },
+        "JJ": {
+            "sdtype": "numerical"
+        },
+        "JJR": {
+            "sdtype": "numerical"
+        },
+        "JJS": {
+            "sdtype": "numerical"
+        },
+        "LS": {
+            "sdtype": "numerical"
+        },
+        "MD": {
+            "sdtype": "numerical"
+        },
+        "NN": {
+            "sdtype": "numerical"
+        },
+        "NNP": {
+            "sdtype": "numerical"
+        },
+        "NNPS": {
+            "sdtype": "numerical"
+        },
+        "NNS": {
+            "sdtype": "numerical"
+        },
+        "PDT": {
+            "sdtype": "numerical"
+        },
+        "POS": {
+            "sdtype": "numerical"
+        },
+        "PRP": {
+            "sdtype": "numerical"
+        },
+        "PRPP": {
+            "sdtype": "numerical"
+        },
+        "RB": {
+            "sdtype": "numerical"
+        },
+        "RBR": {
+            "sdtype": "numerical"
+        },
+        "RBS": {
+            "sdtype": "numerical"
+        },
+        "RP": {
+            "sdtype": "numerical"
+        },
+        "SYM": {
+            "sdtype": "numerical"
+        },
+        "TOs": {
+            "sdtype": "numerical"
+        },
+        "UH": {
+            "sdtype": "numerical"
+        },
+        "VB": {
+            "sdtype": "numerical"
+        },
+        "VBD": {
+            "sdtype": "numerical"
+        },
+        "VBG": {
+            "sdtype": "numerical"
+        },
+        "VBN": {
+            "sdtype": "numerical"
+        },
+        "VBP": {
+            "sdtype": "numerical"
+        },
+        "VBZ": {
+            "sdtype": "numerical"
+        },
+        "WDT": {
+            "sdtype": "numerical"
+        },
+        "WP": {
+            "sdtype": "numerical"
+        },
+        "WPP": {
+            "sdtype": "numerical"
+        },
+        "WRB": {
+            "sdtype": "numerical"
+        },
+        "baseform": {
+            "sdtype": "numerical"
+        },
+        "Quotes": {
+            "sdtype": "numerical"
+        },
+        "questionmarks": {
+            "sdtype": "numerical"
+        },
+        "exclamationmarks": {
+            "sdtype": "numerical"
+        },
+        "fullstops": {
+            "sdtype": "numerical"
+        },
+        "commas": {
+            "sdtype": "numerical"
+        },
+        "semicolon": {
+            "sdtype": "numerical"
+        },
+        "colon": {
+            "sdtype": "numerical"
+        },
+        "ellipsis": {
+            "sdtype": "numerical"
+        },
+        "pronouns1st": {
+            "sdtype": "numerical"
+        },
+        "pronouns2nd": {
+            "sdtype": "numerical"
+        },
+        "pronouns3rd": {
+            "sdtype": "numerical"
+        },
+        "compsupadjadv": {
+            "sdtype": "numerical"
+        },
+        "past": {
+            "sdtype": "numerical"
+        },
+        "imperative": {
+            "sdtype": "numerical"
+        },
+        "present3rd": {
+            "sdtype": "numerical"
+        },
+        "present1st2nd": {
+            "sdtype": "numerical"
+        },
+        "sentence1st": {
+            "sdtype": "numerical"
+        },
+        "sentencelast": {
+            "sdtype": "numerical"
+        },
+        "txtcomplexity": {
+            "sdtype": "numerical"
+        },
+        "Label": {
+            "sdtype": "categorical"
+        }
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "columns": {
+        "Age": {
+            "sdtype": "numerical"
+        },
+        "Sex": {
+            "sdtype": "categorical"
+        },
+        "On_thyroxine": {
+            "sdtype": "categorical"
+        },
+        "Query_on_thyroxine": {
+            "sdtype": "categorical"
+        },
+        "On_antithyroid_medication": {
+            "sdtype": "categorical"
+        },
+        "Sick": {
+            "sdtype": "categorical"
+        },
+        "Pregnant": {
+            "sdtype": "categorical"
+        },
+        "Thyroid_surgery": {
+            "sdtype": "categorical"
+        },
+        "I131_treatment": {
+            "sdtype": "categorical"
+        },
+        "Query_hypothyroid": {
+            "sdtype": "categorical"
+        },
+        "Query_hyperthyroid": {
+            "sdtype": "categorical"
+        },
+        "Lithium": {
+            "sdtype": "categorical"
+        },
+        "Goitre": {
+            "sdtype": "categorical"
+        },
+        "Tumor": {
+            "sdtype": "categorical"
+        },
+        "Hypopituitary": {
+            "sdtype": "categorical"
+        },
+        "Psych": {
+            "sdtype": "categorical"
+        },
+        "TSH": {
+            "sdtype": "numerical"
+        },
+        "T3": {
+            "sdtype": "numerical"
+        },
+        "TT4": {
+            "sdtype": "numerical"
+        },
+        "T4U": {
+            "sdtype": "numerical"
+        },
+        "FTI": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

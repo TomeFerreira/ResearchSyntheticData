@@ -1,0 +1,47 @@
+{
+    "columns": {
+        "Target": {
+            "sdtype": "categorical"
+        },
+        "G1": {
+            "sdtype": "numerical"
+        },
+        "G2": {
+            "sdtype": "numerical"
+        },
+        "G3": {
+            "sdtype": "numerical"
+        },
+        "G4": {
+            "sdtype": "numerical"
+        },
+        "G5": {
+            "sdtype": "numerical"
+        },
+        "G6": {
+            "sdtype": "numerical"
+        },
+        "G7": {
+            "sdtype": "numerical"
+        },
+        "G8": {
+            "sdtype": "numerical"
+        },
+        "G9": {
+            "sdtype": "numerical"
+        },
+        "G10": {
+            "sdtype": "numerical"
+        },
+        "G11": {
+            "sdtype": "numerical"
+        },
+        "Sex": {
+            "sdtype": "categorical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

@@ -1,0 +1,35 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "RI": {
+            "sdtype": "numerical"
+        },
+        "Na": {
+            "sdtype": "numerical"
+        },
+        "Mg": {
+            "sdtype": "numerical"
+        },
+        "Al": {
+            "sdtype": "numerical"
+        },
+        "Si": {
+            "sdtype": "numerical"
+        },
+        "K": {
+            "sdtype": "numerical"
+        },
+        "Ca": {
+            "sdtype": "numerical"
+        },
+        "Ba": {
+            "sdtype": "numerical"
+        },
+        "Fe": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

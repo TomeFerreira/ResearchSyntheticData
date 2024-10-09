@@ -1,0 +1,35 @@
+{
+    "columns": {
+        "Season": {
+            "sdtype": "categorical"
+        },
+        "Age": {
+            "sdtype": "numerical"
+        },
+        "ChildDisese": {
+            "sdtype": "categorical"
+        },
+        "Accident": {
+            "sdtype": "categorical"
+        },
+        "Surgery": {
+            "sdtype": "categorical"
+        },
+        "Fever": {
+            "sdtype": "categorical"
+        },
+        "Alcohol": {
+            "sdtype": "categorical"
+        },
+        "Smoking": {
+            "sdtype": "categorical"
+        },
+        "Sitting": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

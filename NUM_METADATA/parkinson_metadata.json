@@ -1,0 +1,74 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "MDVPFo": {
+            "sdtype": "id"
+        },
+        "MDVPFhi": {
+            "sdtype": "numerical"
+        },
+        "MDVPFlo": {
+            "sdtype": "numerical"
+        },
+        "MDVPJitter": {
+            "sdtype": "numerical"
+        },
+        "MDVPJitterAbs": {
+            "sdtype": "numerical"
+        },
+        "MDVPRAP": {
+            "sdtype": "numerical"
+        },
+        "MDVPPPQ": {
+            "sdtype": "numerical"
+        },
+        "JitterDDP": {
+            "sdtype": "numerical"
+        },
+        "MDVPShimmer": {
+            "sdtype": "numerical"
+        },
+        "MDVPShimmerdB": {
+            "sdtype": "numerical"
+        },
+        "ShimmerAPQ3": {
+            "sdtype": "numerical"
+        },
+        "ShimmerAPQ5": {
+            "sdtype": "numerical"
+        },
+        "MDVPAPQ": {
+            "sdtype": "numerical"
+        },
+        "ShimmerDDA": {
+            "sdtype": "numerical"
+        },
+        "NHR": {
+            "sdtype": "numerical"
+        },
+        "HNR": {
+            "sdtype": "numerical"
+        },
+        "RPDE": {
+            "sdtype": "numerical"
+        },
+        "DFA": {
+            "sdtype": "numerical"
+        },
+        "spread1": {
+            "sdtype": "numerical"
+        },
+        "spread2": {
+            "sdtype": "numerical"
+        },
+        "D2": {
+            "sdtype": "numerical"
+        },
+        "PPE": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

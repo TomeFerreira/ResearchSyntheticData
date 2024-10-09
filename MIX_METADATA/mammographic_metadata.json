@@ -1,0 +1,23 @@
+{
+    "columns": {
+        "BI-RADS": {
+            "sdtype": "numerical"
+        },
+        "Age": {
+            "sdtype": "numerical"
+        },
+        "Shape": {
+            "sdtype": "categorical"
+        },
+        "Margin": {
+            "sdtype": "categorical"
+        },
+        "Density": {
+            "sdtype": "numerical"
+        },
+        "Severity": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

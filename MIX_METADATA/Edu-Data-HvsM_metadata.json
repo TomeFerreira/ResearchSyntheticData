@@ -1,0 +1,56 @@
+{
+    "columns": {
+        "gender": {
+            "sdtype": "categorical"
+        },
+        "NationalITy": {
+            "sdtype": "categorical"
+        },
+        "PlaceofBirth": {
+            "sdtype": "categorical"
+        },
+        "StageID": {
+            "sdtype": "categorical"
+        },
+        "GradeID": {
+            "sdtype": "categorical"
+        },
+        "SectionID": {
+            "sdtype": "categorical"
+        },
+        "Topic": {
+            "sdtype": "categorical"
+        },
+        "Semester": {
+            "sdtype": "categorical"
+        },
+        "Relation": {
+            "sdtype": "categorical"
+        },
+        "raisedhands": {
+            "sdtype": "numerical"
+        },
+        "VisITedResources": {
+            "sdtype": "numerical"
+        },
+        "AnnouncementsView": {
+            "sdtype": "numerical"
+        },
+        "Discussion": {
+            "sdtype": "numerical"
+        },
+        "ParentAnsweringSurvey": {
+            "sdtype": "categorical"
+        },
+        "ParentschoolSatisfaction": {
+            "sdtype": "categorical"
+        },
+        "StudentAbsenceDays": {
+            "sdtype": "categorical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

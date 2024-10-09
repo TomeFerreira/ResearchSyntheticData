@@ -1,0 +1,89 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "b1": {
+            "sdtype": "numerical"
+        },
+        "b2": {
+            "sdtype": "numerical"
+        },
+        "b3": {
+            "sdtype": "numerical"
+        },
+        "b4": {
+            "sdtype": "numerical"
+        },
+        "b5": {
+            "sdtype": "numerical"
+        },
+        "b6": {
+            "sdtype": "numerical"
+        },
+        "b7": {
+            "sdtype": "numerical"
+        },
+        "b8": {
+            "sdtype": "numerical"
+        },
+        "b9": {
+            "sdtype": "numerical"
+        },
+        "pred_minus_obs_H_b1": {
+            "sdtype": "numerical"
+        },
+        "pred_minus_obs_H_b2": {
+            "sdtype": "numerical"
+        },
+        "pred_minus_obs_H_b3": {
+            "sdtype": "numerical"
+        },
+        "pred_minus_obs_H_b4": {
+            "sdtype": "numerical"
+        },
+        "pred_minus_obs_H_b5": {
+            "sdtype": "numerical"
+        },
+        "pred_minus_obs_H_b6": {
+            "sdtype": "numerical"
+        },
+        "pred_minus_obs_H_b7": {
+            "sdtype": "numerical"
+        },
+        "pred_minus_obs_H_b8": {
+            "sdtype": "numerical"
+        },
+        "pred_minus_obs_H_b9": {
+            "sdtype": "numerical"
+        },
+        "pred_minus_obs_S_b1": {
+            "sdtype": "numerical"
+        },
+        "pred_minus_obs_S_b2": {
+            "sdtype": "numerical"
+        },
+        "pred_minus_obs_S_b3": {
+            "sdtype": "numerical"
+        },
+        "pred_minus_obs_S_b4": {
+            "sdtype": "numerical"
+        },
+        "pred_minus_obs_S_b5": {
+            "sdtype": "numerical"
+        },
+        "pred_minus_obs_S_b6": {
+            "sdtype": "numerical"
+        },
+        "pred_minus_obs_S_b7": {
+            "sdtype": "numerical"
+        },
+        "pred_minus_obs_S_b8": {
+            "sdtype": "numerical"
+        },
+        "pred_minus_obs_S_b9": {
+            "sdtype": "numerical"
+        },
+        "CLASSD": {
+            "sdtype": "categorical"
+        }
+    }
+}

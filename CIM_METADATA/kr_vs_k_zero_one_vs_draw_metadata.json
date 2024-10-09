@@ -1,0 +1,26 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "White_king_col": {
+            "sdtype": "categorical"
+        },
+        "White_king_row": {
+            "sdtype": "categorical"
+        },
+        "White_rook_col": {
+            "sdtype": "categorical"
+        },
+        "White_rook_row": {
+            "sdtype": "categorical"
+        },
+        "Black_king_col": {
+            "sdtype": "categorical"
+        },
+        "Black_king_row": {
+            "sdtype": "categorical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

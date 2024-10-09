@@ -1,0 +1,20 @@
+{
+    "columns": {
+        "Begin": {
+            "sdtype": "numerical"
+        },
+        "End": {
+            "sdtype": "numerical"
+        },
+        "Gender": {
+            "sdtype": "categorical"
+        },
+        "Ethnic": {
+            "sdtype": "categorical"
+        },
+        "Prevention": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

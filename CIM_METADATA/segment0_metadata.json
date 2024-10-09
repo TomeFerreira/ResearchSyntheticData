@@ -1,0 +1,65 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "Region-centroid-col": {
+            "sdtype": "numerical"
+        },
+        "Region-centroid-row": {
+            "sdtype": "numerical"
+        },
+        "Region-pixel-count": {
+            "sdtype": "numerical"
+        },
+        "Short-line-density-5": {
+            "sdtype": "numerical"
+        },
+        "Short-line-density-2": {
+            "sdtype": "numerical"
+        },
+        "Vedge-mean": {
+            "sdtype": "numerical"
+        },
+        "Vegde-sd": {
+            "sdtype": "numerical"
+        },
+        "Hedge-mean": {
+            "sdtype": "numerical"
+        },
+        "Hedge-sd": {
+            "sdtype": "numerical"
+        },
+        "Intensity-mean": {
+            "sdtype": "numerical"
+        },
+        "Rawred-mean": {
+            "sdtype": "numerical"
+        },
+        "Rawblue-mean": {
+            "sdtype": "numerical"
+        },
+        "Rawgreen-mean": {
+            "sdtype": "numerical"
+        },
+        "Exred-mean": {
+            "sdtype": "numerical"
+        },
+        "Exblue-mean": {
+            "sdtype": "numerical"
+        },
+        "Exgreen-mean": {
+            "sdtype": "numerical"
+        },
+        "Value-mean": {
+            "sdtype": "numerical"
+        },
+        "Saturatoin-mean": {
+            "sdtype": "numerical"
+        },
+        "Hue-mean": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

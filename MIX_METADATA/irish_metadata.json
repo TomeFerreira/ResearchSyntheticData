@@ -1,0 +1,23 @@
+{
+    "columns": {
+        "Sex": {
+            "sdtype": "categorical"
+        },
+        "DVRT": {
+            "sdtype": "numerical"
+        },
+        "Educational_level": {
+            "sdtype": "categorical"
+        },
+        "Prestige_score": {
+            "sdtype": "numerical"
+        },
+        "Type_school": {
+            "sdtype": "categorical"
+        },
+        "Leaving_Certificate": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

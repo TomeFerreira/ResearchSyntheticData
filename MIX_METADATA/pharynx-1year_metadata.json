@@ -1,0 +1,35 @@
+{
+    "columns": {
+        "INST": {
+            "sdtype": "categorical"
+        },
+        "SEX": {
+            "sdtype": "categorical"
+        },
+        "TREATMENT": {
+            "sdtype": "categorical"
+        },
+        "GRADE": {
+            "sdtype": "categorical"
+        },
+        "AGE": {
+            "sdtype": "numerical"
+        },
+        "CONDITION": {
+            "sdtype": "categorical"
+        },
+        "SITE": {
+            "sdtype": "categorical"
+        },
+        "T": {
+            "sdtype": "numerical"
+        },
+        "N": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

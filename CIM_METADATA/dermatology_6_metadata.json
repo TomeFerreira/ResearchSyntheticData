@@ -1,0 +1,110 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "Erythema": {
+            "sdtype": "numerical"
+        },
+        "Scaling": {
+            "sdtype": "numerical"
+        },
+        "Definite_borders": {
+            "sdtype": "numerical"
+        },
+        "Itching": {
+            "sdtype": "numerical"
+        },
+        "Koebner_phenomenon": {
+            "sdtype": "numerical"
+        },
+        "Polygonal_papules": {
+            "sdtype": "numerical"
+        },
+        "Follicular_papules": {
+            "sdtype": "numerical"
+        },
+        "Oral_mucosal": {
+            "sdtype": "numerical"
+        },
+        "Knee_and_elbow": {
+            "sdtype": "numerical"
+        },
+        "Scalp_involvement": {
+            "sdtype": "numerical"
+        },
+        "Family_history": {
+            "sdtype": "numerical"
+        },
+        "Melanin_incontinence": {
+            "sdtype": "numerical"
+        },
+        "Eosinophils": {
+            "sdtype": "numerical"
+        },
+        "PNL_infiltrate": {
+            "sdtype": "numerical"
+        },
+        "Fibrosis": {
+            "sdtype": "numerical"
+        },
+        "Exocytosis": {
+            "sdtype": "numerical"
+        },
+        "Acanthosis": {
+            "sdtype": "numerical"
+        },
+        "Hyperkeratosis": {
+            "sdtype": "numerical"
+        },
+        "Parakeratosis": {
+            "sdtype": "numerical"
+        },
+        "Clubbing": {
+            "sdtype": "numerical"
+        },
+        "Elongation": {
+            "sdtype": "numerical"
+        },
+        "Thinning": {
+            "sdtype": "numerical"
+        },
+        "Spongiform_pustule": {
+            "sdtype": "numerical"
+        },
+        "Munro_microabcess": {
+            "sdtype": "numerical"
+        },
+        "Focal_hypergranulosis": {
+            "sdtype": "numerical"
+        },
+        "Granular_layer": {
+            "sdtype": "numerical"
+        },
+        "Vacuolisation": {
+            "sdtype": "numerical"
+        },
+        "Spongiosis": {
+            "sdtype": "numerical"
+        },
+        "Saw-tooth_appearance": {
+            "sdtype": "numerical"
+        },
+        "Follicular_horn_plug": {
+            "sdtype": "numerical"
+        },
+        "Perifollicular_parakeratosis": {
+            "sdtype": "numerical"
+        },
+        "Inflammatory_monoluclear": {
+            "sdtype": "numerical"
+        },
+        "Band-like_infiltrate": {
+            "sdtype": "numerical"
+        },
+        "Age": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

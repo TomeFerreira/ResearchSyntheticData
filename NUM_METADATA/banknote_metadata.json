@@ -1,0 +1,20 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "varianceWTI": {
+            "sdtype": "numerical"
+        },
+        "skewenessWTI": {
+            "sdtype": "numerical"
+        },
+        "curtosisWTI": {
+            "sdtype": "numerical"
+        },
+        "entropy": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

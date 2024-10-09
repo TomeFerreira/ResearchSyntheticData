@@ -1,0 +1,17 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "Time": {
+            "sdtype": "numerical"
+        },
+        "Duration": {
+            "sdtype": "numerical"
+        },
+        "Log": {
+            "sdtype": "numerical"
+        },
+        "Status": {
+            "sdtype": "categorical"
+        }
+    }
+}

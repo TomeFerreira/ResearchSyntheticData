@@ -1,0 +1,47 @@
+{
+    "columns": {
+        "Age": {
+            "sdtype": "numerical"
+        },
+        "Sex": {
+            "sdtype": "categorical"
+        },
+        "ChestPainType": {
+            "sdtype": "categorical"
+        },
+        "RestBloodPressure": {
+            "sdtype": "numerical"
+        },
+        "SerumCholestoral": {
+            "sdtype": "numerical"
+        },
+        "FastingBloodSugar": {
+            "sdtype": "categorical"
+        },
+        "ResElectrocardiographic": {
+            "sdtype": "categorical"
+        },
+        "MaxHeartRate": {
+            "sdtype": "numerical"
+        },
+        "ExerciseInduced": {
+            "sdtype": "categorical"
+        },
+        "Oldpeak": {
+            "sdtype": "numerical"
+        },
+        "Slope": {
+            "sdtype": "numerical"
+        },
+        "MajorVessels": {
+            "sdtype": "numerical"
+        },
+        "Thal": {
+            "sdtype": "categorical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

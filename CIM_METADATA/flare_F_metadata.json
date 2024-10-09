@@ -1,0 +1,41 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "LargestSpotSize": {
+            "sdtype": "categorical"
+        },
+        "SpotDistribution": {
+            "sdtype": "categorical"
+        },
+        "Activity": {
+            "sdtype": "categorical"
+        },
+        "Evolution": {
+            "sdtype": "categorical"
+        },
+        "Prev24Hour": {
+            "sdtype": "categorical"
+        },
+        "HistComplex": {
+            "sdtype": "categorical"
+        },
+        "BecomeHist": {
+            "sdtype": "categorical"
+        },
+        "Area": {
+            "sdtype": "categorical"
+        },
+        "C_class": {
+            "sdtype": "categorical"
+        },
+        "M_class": {
+            "sdtype": "categorical"
+        },
+        "X_class": {
+            "sdtype": "categorical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "columns": {
+        "age": {
+            "sdtype": "numerical"
+        },
+        "bp": {
+            "sdtype": "numerical"
+        },
+        "sg": {
+            "sdtype": "categorical"
+        },
+        "al": {
+            "sdtype": "categorical"
+        },
+        "su": {
+            "sdtype": "categorical"
+        },
+        "rbc": {
+            "sdtype": "categorical"
+        },
+        "pc": {
+            "sdtype": "categorical"
+        },
+        "pcc": {
+            "sdtype": "categorical"
+        },
+        "ba": {
+            "sdtype": "categorical"
+        },
+        "bgr": {
+            "sdtype": "numerical"
+        },
+        "bu": {
+            "sdtype": "numerical"
+        },
+        "sc": {
+            "sdtype": "numerical"
+        },
+        "sod": {
+            "sdtype": "numerical"
+        },
+        "pot": {
+            "sdtype": "numerical"
+        },
+        "hemo": {
+            "sdtype": "numerical"
+        },
+        "pcv": {
+            "sdtype": "numerical"
+        },
+        "wbcc": {
+            "sdtype": "numerical"
+        },
+        "rbcc": {
+            "sdtype": "numerical"
+        },
+        "htn": {
+            "sdtype": "categorical"
+        },
+        "dm": {
+            "sdtype": "categorical"
+        },
+        "cad": {
+            "sdtype": "categorical"
+        },
+        "appet": {
+            "sdtype": "categorical"
+        },
+        "pe": {
+            "sdtype": "categorical"
+        },
+        "ane": {
+            "sdtype": "categorical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

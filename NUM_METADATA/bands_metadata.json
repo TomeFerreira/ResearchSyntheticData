@@ -1,0 +1,65 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "Proof_cut": {
+            "sdtype": "numerical"
+        },
+        "Viscosity": {
+            "sdtype": "numerical"
+        },
+        "Caliper": {
+            "sdtype": "numerical"
+        },
+        "Ink_temperature": {
+            "sdtype": "numerical"
+        },
+        "Humifity": {
+            "sdtype": "numerical"
+        },
+        "Roughness": {
+            "sdtype": "numerical"
+        },
+        "Blade_pressure": {
+            "sdtype": "numerical"
+        },
+        "Varnish_pct": {
+            "sdtype": "numerical"
+        },
+        "Press_speed": {
+            "sdtype": "numerical"
+        },
+        "Ink_pct": {
+            "sdtype": "numerical"
+        },
+        "Solvent_pct": {
+            "sdtype": "numerical"
+        },
+        "Esa_voltage": {
+            "sdtype": "numerical"
+        },
+        "ESA_amperage": {
+            "sdtype": "numerical"
+        },
+        "Wax": {
+            "sdtype": "numerical"
+        },
+        "Hardener": {
+            "sdtype": "numerical"
+        },
+        "Roller_durometer": {
+            "sdtype": "numerical"
+        },
+        "Density": {
+            "sdtype": "numerical"
+        },
+        "Anode_ratio": {
+            "sdtype": "numerical"
+        },
+        "Chrome_content": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}

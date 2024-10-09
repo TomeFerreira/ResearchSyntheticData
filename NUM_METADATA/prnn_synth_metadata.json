@@ -1,0 +1,14 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "xs": {
+            "sdtype": "numerical"
+        },
+        "ys": {
+            "sdtype": "numerical"
+        },
+        "yc": {
+            "sdtype": "categorical"
+        }
+    }
+}

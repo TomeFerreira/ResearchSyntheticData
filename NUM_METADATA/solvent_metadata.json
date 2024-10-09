@@ -1,0 +1,32 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "EBITTA": {
+            "sdtype": "numerical"
+        },
+        "NITC": {
+            "sdtype": "numerical"
+        },
+        "SalesTA": {
+            "sdtype": "numerical"
+        },
+        "EBITSales": {
+            "sdtype": "numerical"
+        },
+        "NISales": {
+            "sdtype": "numerical"
+        },
+        "WCTA": {
+            "sdtype": "numerical"
+        },
+        "EquityTL": {
+            "sdtype": "numerical"
+        },
+        "EquityTA": {
+            "sdtype": "numerical"
+        },
+        "Solvent": {
+            "sdtype": "categorical"
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "age": {
+            "sdtype": "numerical"
+        },
+        "sex": {
+            "sdtype": "numerical"
+        },
+        "cp": {
+            "sdtype": "numerical"
+        },
+        "trestbps": {
+            "sdtype": "numerical"
+        },
+        "chol": {
+            "sdtype": "numerical"
+        },
+        "fbs": {
+            "sdtype": "numerical"
+        },
+        "restecg": {
+            "sdtype": "numerical"
+        },
+        "thalach": {
+            "sdtype": "numerical"
+        },
+        "exang": {
+            "sdtype": "numerical"
+        },
+        "oldpeak": {
+            "sdtype": "numerical"
+        },
+        "slope": {
+            "sdtype": "numerical"
+        },
+        "ca": {
+            "sdtype": "numerical"
+        },
+        "thal": {
+            "sdtype": "numerical"
+        },
+        "num": {
+            "sdtype": "categorical"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "columns": {
+        "Age": {
+            "sdtype": "numerical"
+        },
+        "Time_of_survey": {
+            "sdtype": "categorical"
+        },
+        "Schooling": {
+            "sdtype": "categorical"
+        },
+        "Region": {
+            "sdtype": "categorical"
+        },
+        "Count": {
+            "sdtype": "numerical"
+        },
+        "Political_system": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

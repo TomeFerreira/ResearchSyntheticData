@@ -1,0 +1,38 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "height": {
+            "sdtype": "numerical"
+        },
+        "length": {
+            "sdtype": "numerical"
+        },
+        "area": {
+            "sdtype": "numerical"
+        },
+        "eccen": {
+            "sdtype": "numerical"
+        },
+        "p_black": {
+            "sdtype": "numerical"
+        },
+        "p_and": {
+            "sdtype": "numerical"
+        },
+        "mean_tr": {
+            "sdtype": "numerical"
+        },
+        "blackpix": {
+            "sdtype": "numerical"
+        },
+        "blackand": {
+            "sdtype": "numerical"
+        },
+        "wb_trans": {
+            "sdtype": "numerical"
+        },
+        "class": {
+            "sdtype": "categorical"
+        }
+    }
+}

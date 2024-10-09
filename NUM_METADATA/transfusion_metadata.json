@@ -1,0 +1,20 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "R": {
+            "sdtype": "numerical"
+        },
+        "F": {
+            "sdtype": "numerical"
+        },
+        "M": {
+            "sdtype": "numerical"
+        },
+        "T": {
+            "sdtype": "numerical"
+        },
+        "a": {
+            "sdtype": "categorical"
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1",
+    "columns": {
+        "fixedAcidity": {
+            "sdtype": "numerical"
+        },
+        "volatileAcidity": {
+            "sdtype": "numerical"
+        },
+        "citricAcid": {
+            "sdtype": "numerical"
+        },
+        "residualSugar": {
+            "sdtype": "numerical"
+        },
+        "Chlorides": {
+            "sdtype": "numerical"
+        },
+        "freeSulfurDioxide": {
+            "sdtype": "numerical"
+        },
+        "totalSulfurDioxide": {
+            "sdtype": "numerical"
+        },
+        "Density": {
+            "sdtype": "numerical"
+        },
+        "pH": {
+            "sdtype": "numerical"
+        },
+        "Sulphates": {
+            "sdtype": "numerical"
+        },
+        "Alcohol": {
+            "sdtype": "numerical"
+        },
+        "Class": {
+            "sdtype": "categorical"
+        }
+    }
+}
