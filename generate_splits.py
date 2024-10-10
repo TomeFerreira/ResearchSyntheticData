@@ -319,7 +319,7 @@ def main():
 						print('\n\t SDV : GaussianCopulaSynthesizer \t')
 
 						for i in range(n):
-							synthesizer = GaussianCopulaSynthesizer(metadata,epochs=500)
+							synthesizer = GaussianCopulaSynthesizer(metadata)
 							synthesizer.fit(pd.concat([X_train[i], Y_train[i]], axis=1))
 
 							class_options = Y_train[i].unique()
@@ -337,6 +337,7 @@ def main():
 						return
 					except:
 						print("Dataset not suitable to SDV GaussianCopulaSynthesizer")
+						print(traceback.format_exc())
 
 					#################################### SDV : TVAESynthesizer #############################################
 
