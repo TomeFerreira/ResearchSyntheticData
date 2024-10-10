@@ -6,16 +6,24 @@ import os
 import statistics
 import traceback
 import time
-from sklearn import metrics
 from sdmetrics.single_column import BoundaryAdherence,CategoryAdherence,KSComplement,TVComplement,MissingValueSimilarity,StatisticSimilarity,CategoryCoverage,RangeCoverage
 from sdmetrics.single_table import TableStructure,NewRowSynthesis
 from sdmetrics.column_pairs import ContingencySimilarity,CorrelationSimilarity
 from syntheval_copy.syntheval.src.syntheval.metrics.privacy.metric_MIA_classification import MIAClassifier
 from syntheval_copy.syntheval.src.syntheval.metrics.privacy.metric_nn_adversarial_accuracy import NearestNeighbourAdversarialAccuracy
+from syntheval_copy.syntheval.src.syntheval.metrics.privacy.metric_epsilon_identifiability import EpsilonIdentifiability
+from syntheval_copy.syntheval.src.syntheval.metrics.privacy.metric_nn_distance_ratio import NearestNeighbourDistanceRatio
 from sdv.metadata import SingleTableMetadata 
 from readers.dat_reader import read_dat
 from readers.arff_reader_writer import read_arff_file
-from sklearn.preprocessing import MinMaxScaler
+
+METRICS = ['DATASET','METHOD','Table Structure AVG','Table Structure STD','New Row Synthesis AVG','New Row Synthesis STD','Boundary Adherence AVG','Boundary Adherence STD',
+		   'KSComplement AVG','KSComplement STD','Correlation Similarity AVG','Correlation Similarity STD','Statistic Similarity AVG','Statistic Similarity STD',
+		   'Range Coverage AVG','Range Coverage STD','Category Adherence AVG','Category Adherence STD','TVComplement AVG','TVComplement STD',
+		   'Contingency Similarity AVG','Contingency Similarity STD','CategoryCoverage AVG','CategoryCoverage STD','Missing Value Similarity AVG',
+		   'Missing Value Similarity STD','Average Feature Comparison AVG','Average Feature Comparison STD','Mode Feature Comparison AVG',
+		   'Mode Feature Comparison STD','Membership Inference Attack AVG','Membership Inference Attack STD','Epsilon Identifiability Risk AVG',
+		   'Epsilon Identifiability Risk STD','NNAA AVG','NNAA STD','Priv Loss NNAA AVG','Priv Loss NNAA STD','Priv Loss NNDR AVG','Priv Loss NNDR STD']
 
 N_JOBS = 4
 
@@ -174,8 +182,10 @@ def show_SDV_stats(n,original_df,train_X_list,train_Y_list,synthetic_X_list,synt
 
 def privacy_stats(n,original_df,train_X_list,train_Y_list,synthetic_X_list,synthetic_Y_list,holdout_X_list,holdout_Y_list, excel_line):
 	MIA_aux_list = np.zeros(n)
+	EPS_aux_list = np.zeros(n)
 	NNAA_aux_list = np.zeros(n)
-	Privacy_lost_aux_list = np.zeros(n)
+	NNAA_Privacy_lost_aux_list = np.zeros(n)
+	NNDR_Privacy_lost_aux_list = np.zeros(n)
 
 	for i in range(n):
 		training_df = pd.concat([train_X_list[i],train_Y_list[i]],axis=1)
@@ -192,18 +202,32 @@ def privacy_stats(n,original_df,train_X_list,train_Y_list,synthetic_X_list,synth
 		M.evaluate()
 		MIA_aux_list[i] = M.normalize_output()[0]['val']
 
+		E = EpsilonIdentifiability(original_df, synthetic_df, holdout_df, nn_dist='gower', verbose=0)
+		E.evaluate()
+		EPS_aux_list[i] = E.normalize_output()[0]['val']
+
 		#Privacy loss score
 		NNAA = NearestNeighbourAdversarialAccuracy(original_df, synthetic_df, holdout_df, nn_dist='gower',verbose=0)
 		NNAA.evaluate()
-
 		NNAA_aux_list[i] = NNAA.normalize_output()[0]['val']
-
 		#Como privacy loss negativo é == 0 fazemos este max
-		Privacy_lost_aux_list[i] = max(NNAA.normalize_output()[1]['val'], 0)
+		NNAA_Privacy_lost_aux_list[i] = max(NNAA.normalize_output()[1]['val'], 0)
+
+		#NNDR Privacy Loss score
+		NNDR = NearestNeighbourDistanceRatio(original_df, synthetic_df, holdout_df, nn_dist='gower',verbose=0)
+		NNDR.evaluate()
+		NNDR_Privacy_lost_aux_list[i] = max(NNDR.normalize_output()[1]['val'], 0)
+
 	
 	try:
 		excel_line.append(np.mean(MIA_aux_list))
 		excel_line.append(np.std(MIA_aux_list))
+	except:
+		excel_line.append(float('nan'))
+		excel_line.append(float('nan'))
+	try:
+		excel_line.append(np.mean(EPS_aux_list))
+		excel_line.append(np.std(EPS_aux_list))
 	except:
 		excel_line.append(float('nan'))
 		excel_line.append(float('nan'))
@@ -214,8 +238,14 @@ def privacy_stats(n,original_df,train_X_list,train_Y_list,synthetic_X_list,synth
 		excel_line.append(float('nan'))
 		excel_line.append(float('nan'))
 	try:
-		excel_line.append(np.mean(Privacy_lost_aux_list))
-		excel_line.append(np.std(Privacy_lost_aux_list))
+		excel_line.append(np.mean(NNAA_Privacy_lost_aux_list))
+		excel_line.append(np.std(NNAA_Privacy_lost_aux_list))
+	except:
+		excel_line.append(float('nan'))
+		excel_line.append(float('nan'))
+	try:
+		excel_line.append(np.mean(NNDR_Privacy_lost_aux_list))
+		excel_line.append(np.std(NNDR_Privacy_lost_aux_list))
 	except:
 		excel_line.append(float('nan'))
 		excel_line.append(float('nan'))
@@ -244,6 +274,12 @@ def main():
 	for root,dirs,files in os.walk(PATH):
 		for dir in dirs:
 			
+			with open(config['general']['METRICS_TEMP'] + dir +'.csv','r',newline='') as csvfile:
+				if sum(1 for line in csvfile) <=1:
+					with open(config['general']['METRICS_TEMP'] + dir +'.csv','w',newline='') as csvfile_aux:
+						csv_writer = csv.writer(csvfile_aux,delimiter=',')
+						csv_writer.writerow(METRICS)
+
 			PATH = config['general']['PATH']
 			
 			if(not os.path.isdir(PATH)):
@@ -331,6 +367,7 @@ def main():
 					except KeyboardInterrupt:
 						return
 					except:
+						print(traceback.format_exc())
 						print("Dataset not suitable to RandomOverSampler")
 
 					#################################### SMOTE #############################################
