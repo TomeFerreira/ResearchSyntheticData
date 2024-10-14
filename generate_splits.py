@@ -127,7 +127,7 @@ def main():
 						scaler = MinMaxScaler()
 						X_train_aux, X_test_aux, Y_train_aux, Y_test_aux = train_test_split(X,Y,test_size=0.2,stratify=df[classToPredict])
 						X_train_scaled = pd.DataFrame(scaler.fit_transform(X_train_aux), columns=X_train_aux.columns, index=X_train_aux.index)
-						X_test_scaled = pd.DataFrame(scaler.fit_transform(X_test_aux), columns=X_test_aux.columns, index=X_test_aux.index)
+						X_test_scaled = pd.DataFrame(scaler.transform(X_test_aux), columns=X_test_aux.columns, index=X_test_aux.index)
 						write_arff(PATH + '/' + str(i), filename, i, pd.concat([X_train_scaled,Y_train_aux],axis=1), 'Baseline')
 						write_arff(PATH + '/' + str(i), filename, i, pd.concat([X_test_scaled,Y_test_aux],axis=1), 'Test')
 						X_train.append(X_train_scaled)
