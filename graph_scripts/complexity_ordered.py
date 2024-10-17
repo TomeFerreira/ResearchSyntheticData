@@ -8,6 +8,49 @@ COMPLEXITY_MEASURES = ['c1','c2','cls_coef','density','f1.mean','f1.sd','f1v.mea
 TECHNIQUES = ['RandomOverSampler','SMOTE','ADASYN','BorderlineSMOTE','SVMSMOTE','KMeansSMOTE','SMOTEENN','SMOTETomek','CTGAN','GaussianCopulaSynthesizer','TVAESynthesizer','WGAN','DRAGAN','WGAN GP']
 CLASSIFIERS = ['DT','SVC','RF','XG']
 
+def plot_diference_scores_by_complexity_ascending(config,technique1,technique2,measure):
+	complexity_data = pd.read_csv('dataset_complexity_' + config['general']['DIR'] + '.csv')
+	"""
+	Mudar as diretorias quando voltar a correr as cenas
+	"""
+	score_data = pd.read_csv('temp_' + config['general']['DIR'] + '.csv')
+	
+	rows1 = score_data.loc[score_data['Method'] == technique1]
+	rows2 = score_data.loc[score_data['Method'] == technique2]
+
+	complexity_aux = complexity_data.sort_values(measure, na_position='first')
+
+	fig, ax = plt.subplots(figsize=(10, 6))
+	plot_dataset = []
+	plot_score = []
+
+	for i in complexity_aux.iterrows():
+		row1 = rows1.loc[rows1['Dataset']==i[1]['Dataset']]
+		row2 = rows2.loc[rows2['Dataset']==i[1]['Dataset']]
+		#print(row1)
+		#print(row2)
+		plot_dataset.append(i[1]['Dataset'])
+		if len(row1)==0:
+			if len(row2)==0:
+				plot_score.append(0)
+			else:
+				plot_score.append(-row2['(SVC) F1 score MEAN'].values[0])
+		else:
+			if len(row2)==0:
+				plot_score.append(row1['(SVC) F1 score MEAN'].values[0])
+			else:
+				plot_score.append(row1['(SVC) F1 score MEAN'].values[0]-row2['(SVC) F1 score MEAN'].values[0])
+	
+	ax.bar(plot_dataset, plot_score)
+	ax.set_title(technique1 + ' - ' + technique2)
+	ax.set_xlabel('Dataset order by ' + str(measure) + ' (ascending)')
+	ax.set_ylabel('F1 score')
+	#ax.set_ybound(-1,1)
+	ax.set_xticklabels(plot_dataset,rotation=90)
+	fig.subplots_adjust(left=None, bottom=0.5, right=None, top=None, wspace=None, hspace=None)
+
+	return fig
+
 def plot_scores_by_complexity_ascending(config,technique,measure):
 	complexity_data = pd.read_csv('dataset_complexity_' + config['general']['DIR'] + '.csv')
 	"""
@@ -19,23 +62,29 @@ def plot_scores_by_complexity_ascending(config,technique,measure):
 
 	complexity_aux = complexity_data.sort_values(measure, na_position='first')
 
-	fig = plt.figure()
+	fig, ax = plt.subplots(figsize=(10, 6))
 	plot_dataset = []
 	plot_score = []
 
 	for i in complexity_aux.iterrows():
-		plot_dataset.append(i[1]['Dataset'])
 		row = rows.loc[rows['Dataset']==i[1]['Dataset']]
-		plot_score.append(row['(SVC) F1 score MEAN'].values[0])
+		#print(row1)
+		#print(row2)
+		plot_dataset.append(i[1]['Dataset'])
+		if len(row)==0:
+			plot_score.append(0)
+		else:
+			plot_score.append(row['(SVC) F1 score MEAN'].values[0])
 	
-	plt.bar(plot_dataset, plot_score)
-	plt.xlabel('Dataset order by ' + str(measure) + ' (ascending)')
-	plt.ylabel('F1 score')
-	plt.xticks(rotation=90)
-	plt.subplots_adjust(left=None, bottom=0.5, right=None, top=None, wspace=None, hspace=None)
-	plt.show()
+	ax.bar(plot_dataset, plot_score)
+	ax.set_title(technique)
+	ax.set_xlabel('Dataset order by ' + str(measure) + ' (ascending)')
+	ax.set_ylabel('F1 score')
+	#ax.set_ybound(-1,1)
+	ax.set_xticklabels(plot_dataset,rotation=90)
+	fig.subplots_adjust(left=None, bottom=0.5, right=None, top=None, wspace=None, hspace=None)
 
-	return 0
+	return fig
 
 def main():
 	current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -43,7 +92,10 @@ def main():
 	with open(config_path, 'r', encoding='utf-8') as f:
 		config = yaml.safe_load(f)
 
-	plot_scores_by_complexity_ascending(config,'SMOTE','f2.mean')
+	#plot_diference_scores_by_complexity_ascending(config,'Baseline','SMOTE','c1').show()
+	plot_scores_by_complexity_ascending(config,'RandomOverSampler','f3.mean').show()
+
+	plt.show()
 	return 0
 
 if __name__ == '__main__':
