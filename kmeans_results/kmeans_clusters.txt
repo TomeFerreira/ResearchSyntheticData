@@ -1,0 +1,57 @@
+Cluster 0
+dmft-all
+dmft-diet
+dmft-health
+dmft-mouth
+
+Cluster 1
+broadwaymult3
+broadwaymult4
+broadwaymult5
+broadwaymult6
+cyyoung
+fertility-diagnosis
+forest-fires
+gss-vw
+icu
+immunotherapy
+pharynx-3year
+thoracic
+tourism-23457vs01
+tourism2
+
+Cluster 2
+broadway2
+broadway3
+creditscore
+cryotherapy
+Edu-Data-HvsL
+hepatitis
+kidney
+lymphography-normal-fibrosis
+servo
+thyroid-v1
+
+Cluster 3
+alzheimer-v1
+broadwaymult0
+caesarian
+cleveland
+Edu-Data-HvsM
+Edu-Data-MvsL
+heart-statlog
+irish
+lymphography-v1
+mammographic
+pbc
+pharynx-1year
+pharynx-status
+plasma-retinol
+schizo
+student-g
+student-mat
+student-p
+student-por
+tourism0
+traffic
+veteran
