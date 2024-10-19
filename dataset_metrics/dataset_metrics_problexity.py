@@ -1,8 +1,7 @@
 import csv
 import os
-import time
 import numpy as np
-from pymfe.mfe import MFE
+import problexity as px
 import yaml
 from readers.arff_reader_writer import read_arff_file
 from readers.dat_reader import read_dat
@@ -51,21 +50,20 @@ def main():
 					X = df.drop([classToPredict],axis=1)
 					Y = df[classToPredict]
 
-					mfe_aux = MFE(groups=["complexity"])
-					mfe_aux.fit(np.asarray(X), np.asarray(Y))
-					ft = mfe_aux.extract()
+					cc = px.ComplexityCalculator()
+					cc.fit(np.asarray(X), np.asarray(Y))
 
 					if i == 0:
-						with open('dataset_complexity_' + dir +'.csv','w',newline='') as csvfile_aux:
+						with open('dataset_complexity_problexity_' + dir +'.csv','w',newline='') as csvfile_aux:
 							csv_writer = csv.writer(csvfile_aux,delimiter=',')
-							aux = np.array(ft[0])
+							aux = np.array(cc._metrics())
 							aux = np.insert(aux,0,'Dataset')
 							csv_writer.writerow(aux)
 						i = 1
 
-					with open('dataset_complexity_' + dir +'.csv','a',newline='') as csvfile_aux:
+					with open('dataset_complexity_problexity_' + dir +'.csv','a',newline='') as csvfile_aux:
 						csv_writer = csv.writer(csvfile_aux,delimiter=',')
-						aux = list(ft[1])
+						aux = list(cc.complexity)
 						aux.insert(0,filename)
 						csv_writer.writerow(aux)
 

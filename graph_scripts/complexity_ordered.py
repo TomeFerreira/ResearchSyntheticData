@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import yaml
 import os
-
-COMPLEXITY_MEASURES = ['c1','c2','cls_coef','density','f1.mean','f1v.mean','f2.mean','f3.mean','f4.mean','hubs.mean','l1.mean','l2.mean','l3.mean','lsc','n1','n2.mean','n3.mean','n4.mean','t1','t2','t3','t4']
+COMPLEXITY_MEASURES = ['f1', 'f1v', 'f2', 'f3', 'f4', 'l1', 'l2', 'l3', 'n1', 'n2', 'n3','n4', 't1', 'lsc', 'density', 'clsCoef', 'hubs', 't2', 't3', 't4','c1', 'c2']
+#COMPLEXITY_MEASURES = ['c1','c2','cls_coef','density','f1.mean','f1v.mean','f2.mean','f3.mean','f4.mean','hubs.mean','l1.mean','l2.mean','l3.mean','lsc','n1','n2.mean','n3.mean','n4.mean','t1','t2','t3','t4']
 TECHNIQUES = ['RandomOverSampler','SMOTE','ADASYN','BorderlineSMOTE','SVMSMOTE','KMeansSMOTE','SMOTEENN','SMOTETomek','CTGAN','GaussianCopulaSynthesizer','TVAESynthesizer','WGAN','DRAGAN','WGAN GP']
 CLASSIFIERS = ['DT','SVC','RF','XG']
 COLORS = ['b','g','r','c','m','y','k','chocolate','lightgreen','orange','slategray']
@@ -89,7 +89,7 @@ def plot_scores_by_complexity_ascending(config,technique,measure):
 
 def plot_scores_by_complexity_ascending_Baseline_vs_Group(config,techniques,measure):
 
-	complexity_data = pd.read_csv('dataset_complexity_' + config['general']['DIR'] + '.csv')
+	complexity_data = pd.read_csv('dataset_complexity_problexity_' + config['general']['DIR'] + '.csv')
 	"""
 	Mudar as diretorias quando voltar a correr as cenas
 	"""
@@ -156,7 +156,9 @@ def main():
 	#plot_diference_scores_by_complexity_ascending(config,'Baseline','SMOTE','f3.mean').show()
 	#plot_scores_by_complexity_ascending(config,'TVAESynthesizer','f3.mean').show()
 	for metric in COMPLEXITY_MEASURES:
-		plot_scores_by_complexity_ascending_Baseline_vs_Group(config,['RandomOverSampler','SMOTE','BorderlineSMOTE','SMOTETomek'],metric).savefig('graphs/pymfe_results/complexity_'+ metric +'_Oversampling.png')
+		fig = plot_scores_by_complexity_ascending_Baseline_vs_Group(config,['RandomOverSampler','SMOTE','BorderlineSMOTE','SMOTETomek'],metric)
+		fig.savefig('graphs/problexity_results/oversampling/complexity_'+ metric +'_Oversampling.png')
+		plt.close(fig)
 
 	return 0
 
