@@ -124,14 +124,11 @@ def main():
 
 					#Cria 10 divisões diferentes do dataset
 					for i in range(n):
-						scaler = MinMaxScaler()
 						X_train_aux, X_test_aux, Y_train_aux, Y_test_aux = train_test_split(X,Y,test_size=0.2,stratify=df[classToPredict])
-						X_train_scaled = pd.DataFrame(scaler.fit_transform(X_train_aux), columns=X_train_aux.columns, index=X_train_aux.index)
-						X_test_scaled = pd.DataFrame(scaler.transform(X_test_aux), columns=X_test_aux.columns, index=X_test_aux.index)
-						write_arff(PATH + '/' + str(i), filename, i, pd.concat([X_train_scaled,Y_train_aux],axis=1), 'Baseline')
-						write_arff(PATH + '/' + str(i), filename, i, pd.concat([X_test_scaled,Y_test_aux],axis=1), 'Test')
-						X_train.append(X_train_scaled)
-						X_test.append(X_test_scaled)
+						write_arff(PATH + '/' + str(i), filename, i, pd.concat([X_train_aux,Y_train_aux],axis=1), 'Baseline')
+						write_arff(PATH + '/' + str(i), filename, i, pd.concat([X_test_aux,Y_test_aux],axis=1), 'Test')
+						X_train.append(X_train_aux)
+						X_test.append(X_test_aux)
 						Y_train.append(Y_train_aux)
 						Y_test.append(Y_test_aux)
 
@@ -266,27 +263,6 @@ def main():
 						return
 					except:
 						print("Dataset not suitable to SMOTETomek")
-
-					#################################### TFGAN #############################################
-					# try:
-					# 	print('\n\t SDV : TFGAN \t')
-
-					# 	for i in range(n):
-					# 		df = pd.concat([X_train[i], Y_train[i]], axis=1)
-					# 		synthetic_data = pd.DataFrame()
-					# 		for j in Y_train[i].unique():
-					# 			df_it=df[df[classToPredict]==j]
-					# 			tfg = TFG(df_it, epochs=200, batch_size=256, device='cpu')
-					# 			tfg.train()
-					# 			synthetic_data_not_concat = tfg.generate_fake_df(num_rows = max(Y_train[i].value_counts()))
-					# 			synthetic_data = pd.concat([synthetic_data,synthetic_data_not_concat])
-					# 		write_arff(PATH + '/' + str(i), filename, i, pd.concat([synthetic_data.drop([classToPredict], axis=1),synthetic_data[classToPredict]],axis=1), 'TFGAN')
-
-					# except KeyboardInterrupt:
-					# 	return
-					# except:
-					# 	print(traceback.format_exc())
-					# 	print("Dataset not suitable to TFGAN")
 					
 					#################################### SDV : CTGAN #############################################
 					try:
@@ -298,10 +274,14 @@ def main():
 
 							class_options = Y_train[i].unique()
 
-							synthetic_data = pd.DataFrame()
+							synthetic_data = pd.concat([X_train[i],Y_train[i]],axis=1)
+
+							aux = Y_train[i].value_counts()
 
 							for j in class_options:
-								balance_data_condition = Condition(num_rows= max(Y_train[i].value_counts()),column_values={classToPredict:j})
+								if aux[j] == max(aux):
+									continue
+								balance_data_condition = Condition(num_rows= max(aux)-min(aux),column_values={classToPredict:j})
 								synthetic_data_not_concat = synthesizer.sample_from_conditions(conditions=[balance_data_condition])
 								synthetic_data = pd.concat([synthetic_data,synthetic_data_not_concat])
 
@@ -324,10 +304,14 @@ def main():
 
 							class_options = Y_train[i].unique()
 
-							synthetic_data = pd.DataFrame()
+							synthetic_data = pd.concat([X_train[i],Y_train[i]],axis=1)
+
+							aux = Y_train[i].value_counts()
 
 							for j in class_options:
-								balance_data_condition = Condition(num_rows= max(Y_train[i].value_counts()),column_values={classToPredict:j})
+								if aux[j] == max(aux):
+									continue
+								balance_data_condition = Condition(num_rows= max(aux)-min(aux),column_values={classToPredict:j})
 								synthetic_data_not_concat = synthesizer.sample_from_conditions(conditions=[balance_data_condition])
 								synthetic_data = pd.concat([synthetic_data,synthetic_data_not_concat])
 
@@ -350,10 +334,14 @@ def main():
 
 							class_options = Y_train[i].unique()
 
-							synthetic_data = pd.DataFrame()
+							synthetic_data = pd.concat([X_train[i],Y_train[i]],axis=1)
+
+							aux = Y_train[i].value_counts()
 
 							for j in class_options:
-								balance_data_condition = Condition(num_rows= max(Y_train[i].value_counts()),column_values={classToPredict:j})
+								if aux[j] == max(aux):
+									continue
+								balance_data_condition = Condition(num_rows= max(aux)-min(aux),column_values={classToPredict:j})
 								synthetic_data_not_concat = synthesizer.sample_from_conditions(conditions=[balance_data_condition])
 								synthetic_data = pd.concat([synthetic_data,synthetic_data_not_concat])
 
@@ -374,10 +362,14 @@ def main():
 
 							class_options = Y_train[i].unique()
 
-							synthetic_data = pd.DataFrame()
+							synthetic_data = pd.concat([X_train[i],Y_train[i]],axis=1)
+
+							aux = Y_train[i].value_counts()
 
 							for j in class_options:
-								balance_data_condition = Condition(num_rows= max(Y_train[i].value_counts()),column_values={classToPredict:j})
+								if aux[j] == max(aux):
+									continue
+								balance_data_condition = Condition(num_rows= max(aux)-min(aux),column_values={classToPredict:j})
 								synthetic_data_not_concat = synthesizer.sample_from_conditions(conditions=[balance_data_condition])
 								synthetic_data = pd.concat([synthetic_data,synthetic_data_not_concat])
 
@@ -419,12 +411,16 @@ def main():
 
 						for i in range(n):
 							df = pd.concat([X_train[i], Y_train[i]], axis=1)
-							synthetic_data = pd.DataFrame()
+							synthetic_data = pd.concat([X_train[i],Y_train[i]],axis=1)
+
+							aux = Y_train[i].value_counts()
 							for j in Y_train[i].unique():
+								if aux[j] == max(aux):
+									continue
 								df_it=df[df[classToPredict]==j]
 								synthesizer = RegularSynthesizer(modelname='wgan', model_parameters=model_parameters_WGAN, n_critic=2)
 								synthesizer.fit(data=df_it, train_arguments = train_args, num_cols = num_cols, cat_cols = cat_cols)
-								synthetic_data_not_concat = synthesizer.sample(max(Y_train[i].value_counts()))
+								synthetic_data_not_concat = synthesizer.sample(max(aux)-min(aux))
 								synthetic_data = pd.concat([synthetic_data,synthetic_data_not_concat])
 								synthetic_data.fillna(synthetic_data.mean(),inplace=True)
 							write_arff(PATH + '/' + str(i), filename, i, pd.concat([synthetic_data.drop([classToPredict], axis=1),synthetic_data[classToPredict]],axis=1), 'WGAN')
@@ -440,12 +436,16 @@ def main():
 
 						for i in range(n):
 							df = pd.concat([X_train[i], Y_train[i]], axis=1)
-							synthetic_data = pd.DataFrame()
+							synthetic_data = pd.concat([X_train[i],Y_train[i]],axis=1)
+
+							aux = Y_train[i].value_counts()
 							for j in Y_train[i].unique():
+								if aux[j] == max(aux):
+									continue
 								df_it=df[df[classToPredict]==j]
 								synthesizer = RegularSynthesizer(modelname='dragan', model_parameters=model_parameters, n_discriminator=3)
 								synthesizer.fit(data=df_it, train_arguments = train_args, num_cols = num_cols, cat_cols = cat_cols)
-								synthetic_data_not_concat = synthesizer.sample(max(Y_train[i].value_counts()))
+								synthetic_data_not_concat = synthesizer.sample(max(aux)-min(aux))
 								synthetic_data = pd.concat([synthetic_data,synthetic_data_not_concat])
 							write_arff(PATH + '/' + str(i), filename, i, pd.concat([synthetic_data.drop([classToPredict], axis=1),synthetic_data[classToPredict]],axis=1), 'DRAGAN')
 
@@ -461,12 +461,16 @@ def main():
 
 						for i in range(n):
 							df = pd.concat([X_train[i], Y_train[i]], axis=1)
-							synthetic_data = pd.DataFrame()
+							synthetic_data = pd.concat([X_train[i],Y_train[i]],axis=1)
+
+							aux = Y_train[i].value_counts()
 							for j in Y_train[i].unique():
+								if aux[j] == max(aux):
+									continue
 								df_it=df[df[classToPredict]==j]
 								synthesizer = RegularSynthesizer(modelname='wgangp', model_parameters=model_parameters, n_critic=2)
 								synthesizer.fit(data=df_it, train_arguments = train_args, num_cols = num_cols, cat_cols = cat_cols)
-								synthetic_data_not_concat = synthesizer.sample(max(Y_train[i].value_counts()))
+								synthetic_data_not_concat = synthesizer.sample(max(aux)-min(aux))
 								synthetic_data = pd.concat([synthetic_data,synthetic_data_not_concat])
 							write_arff(PATH + '/' + str(i), filename, i, pd.concat([synthetic_data.drop([classToPredict], axis=1),synthetic_data[classToPredict]],axis=1), 'WGAN GP')
 
