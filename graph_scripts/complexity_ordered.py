@@ -4,9 +4,10 @@ import pandas as pd
 import yaml
 import os
 
-COMPLEXITY_MEASURES = ['c1','c2','cls_coef','density','f1.mean','f1.sd','f1v.mean','f1v.sd','f2.mean','f2.sd','f3.mean','f3.sd','f4.mean','f4.sd','hubs.mean','hubs.sd','l1.mean','l1.sd','l2.mean','l2.sd','l3.mean','l3.sd','lsc','n1','n2.mean','n2.sd','n3.mean','n3.sd','n4.mean','n4.sd','t1','t2','t3','t4']
+COMPLEXITY_MEASURES = ['c1','c2','cls_coef','density','f1.mean','f1v.mean','f2.mean','f3.mean','f4.mean','hubs.mean','l1.mean','l2.mean','l3.mean','lsc','n1','n2.mean','n3.mean','n4.mean','t1','t2','t3','t4']
 TECHNIQUES = ['RandomOverSampler','SMOTE','ADASYN','BorderlineSMOTE','SVMSMOTE','KMeansSMOTE','SMOTEENN','SMOTETomek','CTGAN','GaussianCopulaSynthesizer','TVAESynthesizer','WGAN','DRAGAN','WGAN GP']
 CLASSIFIERS = ['DT','SVC','RF','XG']
+COLORS = ['b','g','r','c','m','y','k','chocolate','lightgreen','orange','slategray']
 
 def plot_diference_scores_by_complexity_ascending(config,technique1,technique2,measure):
 	complexity_data = pd.read_csv('dataset_complexity_' + config['general']['DIR'] + '.csv')
@@ -76,7 +77,7 @@ def plot_scores_by_complexity_ascending(config,technique,measure):
 		else:
 			plot_score.append(row['(SVC) F1 score MEAN'].values[0])
 	
-	ax.bar(plot_dataset, plot_score)
+	ax.plot(plot_dataset, plot_score, marker='s', color='green', linestyle='-')
 	ax.set_title(technique)
 	ax.set_xlabel('Dataset order by ' + str(measure) + ' (ascending)')
 	ax.set_ylabel('F1 score')
@@ -86,16 +87,77 @@ def plot_scores_by_complexity_ascending(config,technique,measure):
 
 	return fig
 
+def plot_scores_by_complexity_ascending_Baseline_vs_Group(config,techniques,measure):
+
+	complexity_data = pd.read_csv('dataset_complexity_' + config['general']['DIR'] + '.csv')
+	"""
+	Mudar as diretorias quando voltar a correr as cenas
+	"""
+	score_data = pd.read_csv('temp_' + config['general']['DIR'] + '.csv')
+	
+	fig, ax = plt.subplots(figsize=(10, 6))
+
+	complexity_aux = complexity_data.sort_values(measure, na_position='first')
+	complexity_aux.dropna(subset=[measure],inplace=True)
+
+	"""
+	Baseline
+	"""
+	rows = score_data.loc[score_data['Method'] == 'Baseline']
+
+	plot_dataset = []
+	plot_score = []
+
+	for i in complexity_aux.iterrows():
+		row = rows.loc[rows['Dataset']==i[1]['Dataset']]
+		plot_dataset.append(i[1]['Dataset'])
+		if len(row)==0:
+			plot_score.append(0)
+		else:
+			plot_score.append(row['(SVC) F1 score MEAN'].values[0])
+	
+	ax.plot(plot_dataset, plot_score, marker='s', color=COLORS[0], linestyle='-',label='Baseline')
+
+	"""
+	Other techniques
+	"""
+
+	for j in range(len(techniques)):
+		rows = score_data.loc[score_data['Method'] == techniques[j]]
+		plot_score = []
+
+		for i in complexity_aux.iterrows():
+			row = rows.loc[rows['Dataset']==i[1]['Dataset']]
+			if len(row)==0:
+				plot_score.append(0)
+			else:
+				plot_score.append(row['(SVC) F1 score MEAN'].values[0])
+		
+		ax.plot(plot_dataset, plot_score, marker='s', color=COLORS[j+1], linestyle='-', label=techniques[j])
+	
+	ax.legend(loc="upper left", bbox_to_anchor=(1, 1))
+	ax.set_ybound(0,1)
+	ax.set_xlabel('Dataset order by ' + str(measure) + ' (ascending)')
+	ax.set_ylabel('F1 score')
+	ax.set_xticklabels(plot_dataset,rotation=90)
+	fig.subplots_adjust(left=None, bottom=0.5, right=0.8, top=None, wspace=None, hspace=None)
+
+	return fig
+
+
 def main():
 	current_dir = os.path.dirname(os.path.abspath(__file__))
 	config_path = os.path.join(current_dir, '..', 'config.yaml')
 	with open(config_path, 'r', encoding='utf-8') as f:
 		config = yaml.safe_load(f)
 
-	#plot_diference_scores_by_complexity_ascending(config,'Baseline','SMOTE','c1').show()
-	plot_scores_by_complexity_ascending(config,'RandomOverSampler','f3.mean').show()
+	os.makedirs('graphs', exist_ok=True)
 
-	plt.show()
+	#plot_diference_scores_by_complexity_ascending(config,'Baseline','SMOTE','f3.mean').show()
+	#plot_scores_by_complexity_ascending(config,'TVAESynthesizer','f3.mean').show()
+	for metric in COMPLEXITY_MEASURES:
+		plot_scores_by_complexity_ascending_Baseline_vs_Group(config,['RandomOverSampler','SMOTE','BorderlineSMOTE','SMOTETomek'],metric).savefig('graphs/pymfe_results/complexity_'+ metric +'_Oversampling.png')
+
 	return 0
 
 if __name__ == '__main__':
