@@ -116,7 +116,7 @@ def plot_scores_by_complexity_ascending_Baseline_vs_Group(config,techniques,meas
 		else:
 			plot_score.append(row['(SVC) F1 score MEAN'].values[0])
 	
-	ax.plot(plot_dataset, plot_score, marker='s', color=COLORS[0], linestyle='-',label='Baseline')
+	ax.plot(plot_dataset, plot_score, marker='o', color='dimgray', linestyle='-',label='Baseline')
 
 	"""
 	Other techniques
@@ -132,8 +132,10 @@ def plot_scores_by_complexity_ascending_Baseline_vs_Group(config,techniques,meas
 				plot_score.append(0)
 			else:
 				plot_score.append(row['(SVC) F1 score MEAN'].values[0])
-		
-		ax.plot(plot_dataset, plot_score, marker='s', color=COLORS[j+1], linestyle='-', label=techniques[j])
+		if j == 1:
+			ax.plot(plot_dataset, plot_score, marker='o', color='blue', linestyle='--', label=techniques[j])
+		else:
+			ax.plot(plot_dataset, plot_score, marker='o', color='orange', linestyle='-.', label=techniques[j])
 	
 	ax.legend(loc="upper left", bbox_to_anchor=(1, 1))
 	ax.set_ybound(0,1)
@@ -144,6 +146,60 @@ def plot_scores_by_complexity_ascending_Baseline_vs_Group(config,techniques,meas
 
 	return fig
 
+def barplot_scores_by_complexity_ascending_Baseline_vs_Group(config,techniques,measure):
+
+	complexity_data = pd.read_csv('dataset_complexity_problexity_' + config['general']['DIR'] + '.csv')
+	"""
+	Mudar as diretorias quando voltar a correr as cenas
+	"""
+	score_data = pd.read_csv('temp_' + config['general']['DIR'] + '.csv')
+
+	complexity_aux = complexity_data.sort_values(measure, na_position='first')
+	complexity_aux.dropna(subset=[measure],inplace=True)
+
+	plot_data = pd.DataFrame(index=complexity_aux['Dataset'])
+
+	"""
+	Baseline
+	"""
+	baseline_rows = score_data.loc[score_data['Method'] == 'Baseline']
+	baseline_scores = []
+	for dataset in complexity_aux['Dataset']:
+		row = baseline_rows.loc[baseline_rows['Dataset'] == dataset]
+		if len(row) == 0:
+			baseline_scores.append(0)
+		else:
+			baseline_scores.append(row['(SVC) F1 score MEAN'].values[0]) 
+		
+	plot_data['Baseline'] = baseline_scores
+
+	"""
+	Other techniques
+	"""
+
+	for technique  in techniques:
+		technique_rows = score_data.loc[score_data['Method'] == technique]
+		technique_scores = []
+		for dataset in complexity_aux['Dataset']:
+			row = technique_rows.loc[technique_rows['Dataset'] == dataset]
+			if len(row) == 0:
+				technique_scores.append(0)
+			else:
+				technique_scores.append(row['(SVC) F1 score MEAN'].values[0]) 
+		
+		plot_data[technique] = technique_scores
+	
+	ax = plot_data.plot.bar(figsize=(10, 6), color=['k','green','red'], width=0.9)
+
+	ax.legend(loc="upper left", bbox_to_anchor=(1, 1))
+	ax.set_ybound(0,1)
+	ax.set_xlabel('Dataset order by ' + str(measure) + ' (ascending)')
+	ax.set_ylabel('F1 score')
+
+	fig = ax.get_figure()
+	fig.subplots_adjust(left=0.06, bottom=0.4, right=0.8, top=0.9, wspace=None, hspace=None)
+
+	return fig
 
 def main():
 	current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -155,9 +211,25 @@ def main():
 
 	#plot_diference_scores_by_complexity_ascending(config,'Baseline','SMOTE','f3.mean').show()
 	#plot_scores_by_complexity_ascending(config,'TVAESynthesizer','f3.mean').show()
+	# for metric in COMPLEXITY_MEASURES:
+	# 	fig = plot_scores_by_complexity_ascending_Baseline_vs_Group(config,['RandomOverSampler','SMOTE','BorderlineSMOTE','SMOTETomek'],metric)
+	# 	fig.savefig('graphs/problexity_results/oversampling/complexity_'+ metric +'_Oversampling.png')
+	# 	plt.close(fig)
+	
+	# for metric in COMPLEXITY_MEASURES:
+	# 	fig = barplot_scores_by_complexity_ascending_Baseline_vs_Group(config,['SMOTETomek','TVAESynthesizer'],metric)
+	# 	fig.savefig('graphs/problexity_v2_results/Bar_Plot/TVAE/complexity_'+ metric +'_Bar.png')
+	# 	plt.close(fig)
+	# 	fig = barplot_scores_by_complexity_ascending_Baseline_vs_Group(config,['SMOTETomek','WGAN GP'],metric)
+	# 	fig.savefig('graphs/problexity_v2_results/Bar_Plot/WGAN_GP/complexity_'+ metric +'_Bar.png')
+	# 	plt.close(fig)
+
 	for metric in COMPLEXITY_MEASURES:
-		fig = plot_scores_by_complexity_ascending_Baseline_vs_Group(config,['RandomOverSampler','SMOTE','BorderlineSMOTE','SMOTETomek'],metric)
-		fig.savefig('graphs/problexity_results/oversampling/complexity_'+ metric +'_Oversampling.png')
+		fig = plot_scores_by_complexity_ascending_Baseline_vs_Group(config,['SMOTETomek','TVAESynthesizer'],metric)
+		fig.savefig('graphs/problexity_v2_results/Line_Plot/TVAE/complexity_'+ metric +'.png')
+		plt.close(fig)
+		fig = plot_scores_by_complexity_ascending_Baseline_vs_Group(config,['SMOTETomek','WGAN GP'],metric)
+		fig.savefig('graphs/problexity_v2_results/Line_Plot/WGAN_GP/complexity_'+ metric +'.png')
 		plt.close(fig)
 
 	return 0
